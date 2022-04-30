@@ -8,9 +8,9 @@ draft: true
 
 # restic/rest-server install & configure
 
-Created Thursday 28 April 2022
 
-Already packaged!
+
+
 
     apk add rest-server \
      rest-server-doc # Optional
