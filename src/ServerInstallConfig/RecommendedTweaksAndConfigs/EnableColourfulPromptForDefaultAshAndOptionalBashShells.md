@@ -1,0 +1,29 @@
+# EnableColourfulPromptForDefaultAshAndOptionalBashShells
+Created Thursday 28 April 2022
+
+Overview
+--------
+
+``/etc/profile`` and the '``.sh``' scripts in ``/etc/profile.d`` are sourced on every invokation of the 'ash' (default Alpine/Busybox shell) as well as the 'bash' shell when launched as a login shell. This allows us to have some system-wide default configuration for these shels.
+
+Enable the disabled color_prompt.sh snippet
+-------------------------------------------
+
+As root, execute:
+
+	mv /etc/profile.d/color_prompt.sh.disabled /etc/profile.d/color_prompt.sh
+
+
+If using ``etckeeper``, now is a good time to execute:
+
+	etckeeper commit "Enable colour prompt for 'sh' shells"
+
+
+Test it
+-------
+
+
+1. Do a fresh login as any interactive shell  user. (SSH logins work for this). **Do not** reboot before commiting your changes.
+2. Observe your fancy new colour prompt.
+
+

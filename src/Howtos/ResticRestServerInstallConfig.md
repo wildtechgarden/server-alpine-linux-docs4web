@@ -1,0 +1,45 @@
+---
+date: 2022-04-28
+title: "restic/rest-server install & configure"
+tags: ["alpine","backup","configuration","docs","linux","sysadmin-devops"]
+series: ["docs4web","alpine-linux-local-server"]
+draft: true
+---
+
+# restic/rest-server install & configure
+
+Created Thursday 28 April 2022
+
+Already packaged!
+
+    apk add rest-server \
+     rest-server-doc # Optional
+
+Set command line params via ``/etc/conf.d/rest-server``
+
+See docs at ``/usr/share/doc/rest-server/README.md``
+
+or from the rest-server github repo: <https://github.com/restic/rest-server>.
+
+    addgroup -S rest-server # adduser -S does not autocreate a group
+    adduser -S -h /var/lib/rest-server -g "Restic REST server,,," -D rest-server rest-server
+
+Edit ``/etc/conf.d/rest-server ``to add
+
+    REST_USER=rest-server
+    REST_GROUP=rest-server
+
+And configure `REST_SERVER_PATH` and any additional options (`REST_SERVER_OPTS`)
+
+### Enable on start up
+
+    rc-update add rest-server 
+
+Start it immediately
+
+    service rest-server start
+
+To manage the ``htpasswd`` file use ``apache2-utils``
+
+    apk add apache2-utils
+    htpasswd …
