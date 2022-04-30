@@ -7,15 +7,10 @@ series: ["docs4web","alpine-linux-local-server"]
 
 # Use Alpine Linux on Raspberry Pi as a server
 
-Motivation
+Overview
 ----------
 
-There are some less than stellar guides on the Alpine wiki
-
-<https://wiki.alpinelinux.org/wiki/Raspberry_Pi>
-<https://wiki.alpinelinux.org/wiki/Classic_install_or_sys_mode_on_Raspberry_Pi>
-
-So here is an attempt at something better for a semi-diskless / semi-data install.
+TBD
 
 Special Notes
 -------------
@@ -29,3 +24,9 @@ Guides
 [Server install and configure](./ServerInstallConfig.md)
 
 [Hardware-specific tweaks and configuration](../kernel-and-hardware-notes/hardware-specific-tweaks-configs.md)
+
+## Existing Documentation
+
+There are guides that are a bit of a mess on the Alpine wiki
+
+https://wiki.alpinelinux.org/wiki/Raspberry_Pi https://wiki.alpinelinux.org/wiki/Classic_install_or_sys_mode_on_Raspberry_Pi

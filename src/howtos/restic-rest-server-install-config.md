@@ -6,11 +6,7 @@ series: ["docs4web","alpine-linux-local-server"]
 draft: true
 ---
 
-# restic/rest-server install & configure
-
-
-
-
+# Install and configure restic/rest-server
 
     apk add rest-server \
      rest-server-doc # Optional

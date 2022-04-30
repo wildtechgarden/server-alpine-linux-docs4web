@@ -1,5 +1,5 @@
 ---
-date: 2022-04-29
+date: 2022-04-30
 title: Prepare SD card using GNOME Disks
 tags: ["alpine","configuration","docs","linux","sysadmin-devops","raspberry-pi","sbc"]
 series: ["docs4web","alpine-linux-local-server"]

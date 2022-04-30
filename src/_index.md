@@ -9,24 +9,33 @@ series: ["docs4web","alpine-linux-local-server"]
 
 Daniel's documentation for using Alpine Linux for local servers on x86-64 and Raspberry Pi family.
 
-## 
+These documents use only the 'main' repository, except in one or more [optional HowTo guides](howtos/_index.md).
+
+In addition, these documents try to keep things DRY (don't repeat yourself) in order to avoid out-sync information on the same topic.
 
 ## Install & initial configuration notes
 
-[Install as a server on a Raspberry Pi](install-on-raspberry-pi/_index.md)  
-[Server install and configure](./Home/ServerInstallConfig.md)  
+[Install as a server on a Raspberry Pi](install-on-raspberry-pi/_index.md) 
+
+[Install and configure base server](server-install-config/_index.md)
+
+[Do important post-install configuration](important-post-install-configuration.md)
+
+[Add recommended tweaks and configuration](recommended-tweaks-and-configs/_index.md)
+
+## Additional notes
 
 [Kernel and hardware notes](kernel-and-hardware-notes/_index.md)
------------------------------------------------------------
 
 [HowTos](howtos/_index.md)
----------------------------
 
 --------
 
 The first member of Daniel Dickinson's 'Docs4Web' collection of repositories.
 
-Docs4Web is a collection of documents in plain Markdown format that is intended for inclusion both on [Daniel's technical and professional website](https://www.wildtechgarden.ca/) as well as in the project which it documents, if applicable. In this case the hope is these docs will become part of the [Alpine Linux Docs](https://docs.alpinelinux.org/) or [Alpine Linux Wiki](https://wiki.alpinelinux.org/) or some combination of those)
+Docs4Web is (to be) a collection of documents in plain Markdown format that is intended for inclusion both on [Daniel's technical and professional website](https://www.wildtechgarden.ca/) as well as in the projects which are documented, if applicable. In this case the hope is these docs will be accepted for integration into the [Alpine Linux Docs](https://docs.alpinelinux.org/) or [Alpine Linux Wiki](https://wiki.alpinelinux.org/) or some combination of those.
+
+In addition, these documents try to keep things DRY (don't repeat yourself) in order to avoid out-sync information on the same topic.
 
 --------
 

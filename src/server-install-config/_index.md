@@ -1,8 +1,13 @@
-# Server install & configure
-Created Thursday 28 April 2022
+---
+date: 2022-04-28
+title: Server install & configure
+tags: ["alpine","configuration","docs","hosting","linux","self-host","sysadmin-devops","raspberry-pi","sbc"]
+series: ["docs4web","alpine-linux-local-server"]
+---
 
-Overview
---------
+# Server install & configure
+
+## Overview
 
 This set of guides and recommendations is aimed at the use of Alpine as your local servers on physical hardware where you have access to the console on boot. Notes for differences with headless installations (but still local) are included inline.
 
@@ -13,22 +18,18 @@ Also not documented here is 'automated' installation and configuration, although
 Guides
 ------
 
+1. [Create semi-data/semi-diskless install](create-semi-data-install/_index.md)
+2. [Use modified setup-alpine procedure](use-modified-setup-alpine-procedure.md)
+3. [Add essential packages](add-essential-packages.md)
+4. [Commit LBU](commit-lbu.md)
+5. [Reboot](reboot.md) 
+6. [Kernel and hardware notes - hardware specific tweaks & configuration](../kernel-and-hardware-notes/hardware-specific-tweaks-configs.md)
 
-1. [Create data install](./ServerInstallConfig/CreateDataInstall.md)
-2. [Use modified setup-alpine procedure](./ServerInstallConfig/UseModifiedSetupAlpineProcedure.md)
-3. [Add essential packages](./ServerInstallConfig/AddEssentialPackages.md)
-4. [Commit LBU](./ServerInstallConfig/CommitLBU.md)
-5. [Reboot](./ServerInstallConfig/Reboot.md) 
-6. [Kernel and hardware notes - hardware specific tweaks & configuration](./KernelAndHardwareNotes/HardwareSpecificTweaksAndConfigs.md)
-7. [Recommended tweaks and configuration](./ServerInstallConfig/RecommendedTweaksAndConfigs.md)
+## See also
 
+[Recommended tweaks and configuration](../recommended-tweaks-and-configs/_index.md)
 
 Troubleshooting
 ---------------
 
-
-* [First boot troubleshooting](./ServerInstallConfig/FirstbootTroubleshooting.md)
-
- 
-
-
+* [First boot troubleshooting](firstboot-troubleshooting.md)

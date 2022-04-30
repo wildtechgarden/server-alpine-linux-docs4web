@@ -1,5 +1,5 @@
 ---
-date: 2022-04-29
+date: 2022-04-30
 title: Copy tarball to boot under Gnome
 tags: ["alpine","configuration","docs","linux","sysadmin-devops","raspberry-pi","sbc"]
 series: ["docs4web","alpine-linux-local-server"]

@@ -7,4 +7,14 @@ series: ["docs4web","alpine-linux-local-server"]
 
 # # HowTos
 
-[restic/rest-server install and config](restic-rest-server-install-config.md)
+In alphabetical order
+
+[Add etckeeper for `/etc` backup](add-etckeeper)
+
+[Add etckeeper git remote and push on commit](add-etckeeper-git-remote.md)
+
+[Add nano and use as default editor](add-nano-and-use-as-default-editor.md)
+
+[Enable colourful shell prompt system-wide](enable-colourful-shell-prompt.md)
+
+[Install and configure restic/rest-server](restic-rest-server-install-config.md)

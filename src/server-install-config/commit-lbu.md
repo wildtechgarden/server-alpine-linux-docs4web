@@ -1,4 +1,5 @@
 # CommitLBU
+
 Created Thursday 28 April 2022
 
 Overview
@@ -11,6 +12,4 @@ Do the commit (unencrypted)
 
 For the initial commit and reboot use an unencrypted LBU (to make sure everything works, first)
 
-	lbu commit
-
-
+    lbu commit
