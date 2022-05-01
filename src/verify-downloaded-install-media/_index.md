@@ -9,7 +9,7 @@ series: ["docs4web","alpine-linux-local-server"]
 
 You should grab the appropriate install media as well as sha256 and GnuPG signatures for that media.
 
-**NOTE**: For up-to-date links/version you should [use the official download page](view-source:https://www.alpinelinux.org/downloads/), Raspberry Pi table.
+**NOTE**: For up-to-date links/version you should [use the official download page](view-source:https://www.alpinelinux.org/downloads/) download table appropriate for your device.
 
 ## Verify the tarball has the expected contents
 
@@ -23,7 +23,7 @@ Just a matching check (i.e. correct download contents)
 sha256sum -c install-tarball-name.sha256
 ```
 
-#### MacOS
+#### Mac OS
 
 TBD
 
