@@ -15,6 +15,8 @@ series: ["docs4web","alpine-linux-local-server"]
 
 #### Using built-in GUI 'Disk Management' feature
 
+TBD
+
 #### Using diskpart
 
 TBD
@@ -25,15 +27,13 @@ TBD
 
 ### On Linux (many distros)
 
-#### [Using Gnome 'Disks' applet](prepare-sd-using-gnome-disks/_index.md)
+#### GUI
 
-#### Using CLI parted
+[Using Gnome 'Disks' applet](prepare-sd-using-gnome-disks/_index.md)
 
-TBD
+#### Using command line (CLI)
 
-#### Using CLI fdisk
-
-TBD
+[Partitioning on the Linux command line](../../../linux-cli-partitioning/_index.md)
 
 ### On Mac OS
 
@@ -43,15 +43,21 @@ TBD
 
 ### On Windows 10
 
+You will need to install a program such a [7-zip](https://www.7-zip.org/)
+
 TBD
 
 ### On Linux (many distros)
 
-#### [Using GUI under Gnome](copy-tarball-to-boot-under-gnome/_index.md)
+[Copy install tarball to boot partition using GUI file manager](copy-tarball-to-boot-under-gnome/_index.md)
 
 #### Using CLI commands
 
-TBD
+Assuming you have mounted your new boot partition on `/mnt` you can (as root) do:
+
+```shell
+tar -C /mnt --strip 1 -xzf /path/to/install-tarball.tar.gz # FIXME: Verify --strip 1 is needed with the CLI
+```
 
 ### On Mac OS
 

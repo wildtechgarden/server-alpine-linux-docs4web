@@ -36,9 +36,9 @@ change what you need, then return to read-only status
 mount -o remount,ro /media/mmcblk0p1
 ```
 
-**Hint**: Typical x86-64 systems will use `/media/sda1` rather than `/media/mmcblk0`.
+**Hint**: Typical x86-64 systems will likely use `/media/sda1` rather than `/media/mmcblk0`. You will need to verify the name of the storage device and adjust these instructions accordingly.
 
-It is recommended that you do **not** make this partition read-write under normal conditions. This avoids accidental writes which could render your system unbootable.
+**NOTE**: It is recommended that you do **not** make this partition read-write under normal conditions. This avoids accidental writes which could render your system unbootable.
 
 Systems using Syslinux for bootloader
 -------------------------------------
@@ -86,4 +86,4 @@ Raspberry Pi
 
 `/media/mmcblk0p1/usercfg.txt`: The preferred location for setting certain hardware configuration options.
 
-`/media/mmcblk0p1/config.txt` : Is *replaced* on kernel updates so it is recommended that you do not use this location for your settings. Instead use *`usercfg.txt`*. Note that some parameters like `gpu_mem=32` will not be honoured in `usercfg.txt` and therefore you must edit `config.txt` and remember to update on kernel update. (see [Raspberry Pi firmware GitHub issue #1332](https://github.com/raspberrypi/firmware/issues/1332))
+`/media/mmcblk0p1/config.txt` : Is *replaced* on kernel updates so it is recommended that you do not use this location for your settings. Instead use *`usercfg.txt`*. Unfortunately, some parameters like `gpu_mem=32` will not be honoured in `usercfg.txt` and therefore you must edit `config.txt` and remember to update on kernel update. (see [Raspberry Pi firmware GitHub issue #1332](https://github.com/raspberrypi/firmware/issues/1332))

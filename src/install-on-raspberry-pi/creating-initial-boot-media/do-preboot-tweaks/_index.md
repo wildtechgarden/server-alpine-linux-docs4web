@@ -25,4 +25,6 @@ Screenshots are from GNOME but other GUI desktops are similar
 
 [![Text editor showing adding consoleblank=300 to kernel commandline in cmdline.txt](19-text-editor-adding-consoleblank-to-kernel-command-line.png)](19-text-editor-adding-consoleblank-to-kernel-command-line.png)
 
---------
+## On Mac OS
+
+TBD

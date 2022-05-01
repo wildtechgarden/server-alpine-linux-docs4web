@@ -35,7 +35,3 @@ Screenshots are from GNOME but most GUI desktops are similar.
 
 7. Remove the now extraneous extraction directory (which should be empty).
    [![File manager showing result of removing the now extraneous extraction directory](15-remove-the-extraneous-extraction-directory.png)](15-remove-the-extraneous-extraction-directory.png)
-
-### On Mac OS
-
-TBD

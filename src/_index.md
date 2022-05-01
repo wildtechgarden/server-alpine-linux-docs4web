@@ -11,7 +11,7 @@ Daniel's documentation for using Alpine Linux for local servers on x86-64 and Ra
 
 These documents use only the 'main' repository, except in one or more [optional HowTo guides](howtos/_index.md).
 
-In addition, these documents try to keep things DRY (don't repeat yourself) in order to avoid out-sync information on the same topic.
+In addition, these documents try to keep things DRY (don't repeat yourself) in order to avoid out-of-sync information on the same topic.
 
 ## Install & initial configuration notes
 
@@ -35,7 +35,7 @@ The first member of Daniel Dickinson's 'Docs4Web' collection of repositories.
 
 Docs4Web is (to be) a collection of documents in plain Markdown format that is intended for inclusion both on [Daniel's technical and professional website](https://www.wildtechgarden.ca/) as well as in the projects which are documented, if applicable. In this case the hope is these docs will be accepted for integration into the [Alpine Linux Docs](https://docs.alpinelinux.org/) or [Alpine Linux Wiki](https://wiki.alpinelinux.org/) or some combination of those.
 
-In addition, these documents try to keep things DRY (don't repeat yourself) in order to avoid out-sync information on the same topic.
+In addition, these documents try to keep things DRY (don't repeat yourself) in order to avoid out-of-sync information on the same topic.
 
 --------
 
