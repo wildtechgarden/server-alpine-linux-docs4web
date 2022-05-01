@@ -1,6 +1,13 @@
-# CommitLBU
+---
+date: 2022-04-28
+title: "Commit LBU (stores changes)"
+tags: ["alpine","howtos","docs","linux","sysadmin-devops"]
+series: ["docs4web","alpine-linux-local-server"]
+---
 
-Created Thursday 28 April 2022
+# Commit LBU
+
+
 
 Overview
 --------

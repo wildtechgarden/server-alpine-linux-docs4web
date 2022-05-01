@@ -1,8 +1,13 @@
-# ConfigureSystemAndDataNetworkBackups
-Created Friday 29 April 2022
+---
+date: 2022-04-29
+title: "Configure off-system backups"
+tags: ["alpine","howtos","docs","linux","sysadmin-devops"]
+series: ["docs4web","alpine-linux-local-server"]
+---
 
-Overview
---------
+# Configure off-system backups
+
+## Overview
 
 TBD
 
@@ -24,4 +29,3 @@ Case 2: Rsync backups (push or pull)
 
 Case 3: Other backup solution (push or pull)
 --------------------------------------------
-

@@ -1,8 +1,11 @@
+---
+date: 2022-04-28
+title: "Reboot"]
+series: ["docs4web","alpine-linux-local-server"]
+---
+
 # Reboot
 
-Created Thursday 28 April 2022
-
-The Moment of Truth
--------------------
+## The Moment of Truth
 
     reboot

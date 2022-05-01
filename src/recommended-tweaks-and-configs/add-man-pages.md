@@ -1,5 +1,11 @@
-# AddManPages
-Created Thursday 28 April 2022
+---
+date: 2022-04-28
+title: "Add man pages and other on-system docs"
+tags: ["alpine","howtos","docs","linux","sysadmin-devops"]
+series: ["docs4web","alpine-linux-local-server"]
+---
+
+# Add man pages and other on-system docs
 
 Overview
 --------
@@ -12,30 +18,26 @@ Add the man page command and base man pages
 -------------------------------------------
 
 Execute (as root):
-	apk add mandoc mandoc-doc mandoc-apropos man-pages
-
+    apk add mandoc mandoc-doc mandoc-apropos man-pages
 
 Add man pages for packages already on system
 --------------------------------------------
 
 This will vary depending on what you have installed at this point. Here is an example command (as root):
 
-	apk add apk-tools-doc \
-	 busybox-doc \
-	 chrony-doc \
-	 e2fsprogs-doc \
-	 etckeeper-doc \
-	 findutils-doc \
-	 fstrm-doc \
-	 git-doc \
-	 haveged-doc \
-	 ifupdown-ng-doc \
-	 iproute2-doc \ 
-	 lvm2-doc \
-	 nano-doc \
-	 openssh-doc \
-	 openssl3-doc \
-	 sudo-doc
-
-
-
+    apk add apk-tools-doc \
+     busybox-doc \
+     chrony-doc \
+     e2fsprogs-doc \
+     etckeeper-doc \
+     findutils-doc \
+     fstrm-doc \
+     git-doc \
+     haveged-doc \
+     ifupdown-ng-doc \
+     iproute2-doc \ 
+     lvm2-doc \
+     nano-doc \
+     openssh-doc \
+     openssl3-doc \
+     sudo-doc

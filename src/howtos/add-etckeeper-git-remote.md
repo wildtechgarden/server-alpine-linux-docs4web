@@ -1,9 +1,13 @@
-# AddEtckeeperGitRemoteForEtcBackup
+---
+date: 2022-04-28
+title: "Add etckeeper git remote for pushing on commit"
+tags: ["alpine","howtos","docs","linux","sysadmin-devops"]
+series: ["docs4web","alpine-linux-local-server"]
+---
 
-Created Thursday 28 April 2022
+# Add etckeeper git remote for pushing on commit
 
-Overview
---------
+## Overview
 
 Tracking configuration changes in etckeeper is great, but even better is storing in an off-system private repository, preferably one with a decent web interface to the repo (makes browsing the repo much friendlier). Ideally you will have a local git server for this rather than some cloud service.
 
@@ -82,4 +86,7 @@ Finally, commit to LBU
 ----------------------
 
 Execute:
-    lbu commit
+
+```shell
+lbu commit
+```

@@ -1,9 +1,13 @@
-# AddNanoAndUseAsDefaultEditor
+---
+date: 2022-04-28
+title: "Add nano and use as default editor"
+tags: ["alpine","howtos","docs","linux","sysadmin-devops"]
+series: ["docs4web","alpine-linux-local-server"]
+---
 
-Created Thursday 28 April 2022
+# # Add nano and use as default editor
 
-Overview
---------
+## Overview
 
 For many users ``vi`` (the default editor for Alpine) is difficult and confusing to use. Even if that is not the case for you, if you find it helpful to have the same experience as newbies you wish to help, you might implement this for your own use as well.
 

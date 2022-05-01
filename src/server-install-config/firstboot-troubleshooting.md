@@ -1,9 +1,13 @@
-# FirstbootTroubleshooting
+---
+date: 2022-04-28
+title: "Firstboot troubleshooting"
+tags: ["alpine","howtos","docs","linux","sysadmin-devops"]
+series: ["docs4web","alpine-linux-local-server"]
+---
 
-Created Thursday 28 April 2022
+# Firstboot troubleshooting
 
-Overview
---------
+## Overview
 
 Uh-oh. The reboot after initial setup didn't work. Now what?
 

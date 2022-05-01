@@ -1,15 +1,18 @@
-# AddTmux
-Created Thursday 28 April 2022
+---
+date: 2022-04-28
+title: "Add tmux"
+tags: ["alpine","howtos","docs","linux","sysadmin-devops"]
+series: ["docs4web","alpine-linux-local-server"]
+---
 
-Overview
---------
+# Add tmux
+
+## Overview
 
 TBD
 
 Install
 -------
 
-	apk add tmux \
-	 tmux-doc # You can omit tmux-doc if you don't need/want the man page
-
-
+    apk add tmux \
+     tmux-doc # You can omit tmux-doc if you don't need/want the man page

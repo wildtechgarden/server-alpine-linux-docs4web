@@ -1,9 +1,13 @@
-# UseEncryptedLBU
+---
+date: 2022-04-28
+title: "Use encrypted LBU"
+tags: ["alpine","howtos","docs","linux","security","sysadmin-devops"]
+series: ["docs4web","alpine-linux-local-server"]
+---
 
-Created Thursday 28 April 2022
+# Use encrypted LBU
 
-Overview
---------
+## Overview
 
 Unless you needed headless, or unattended reboots or power up (e.g. after power loss), it is highly recommended to use an encrypted configuration backup. This protects the data while the system is down (while the system up, the need to login, and the usual user access mechanism apply, but while powered down a FAT32 partition is easily read, or even an unencrypted ext4 partition.
 

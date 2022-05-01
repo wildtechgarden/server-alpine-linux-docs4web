@@ -1,9 +1,13 @@
-# AddEtckeeper
+---
+date: 2022-04-28
+title: "Add etckeeper"
+tags: ["alpine","howtos","docs","linux","sysadmin-devops"]
+series: ["docs4web","alpine-linux-local-server"]
+---
 
-Created Thursday 28 April 2022
+# Add etckeeper
 
-Overview
---------
+## Overview
 
 While the LBU mechanism with backups allows restoring to previous state it lacks commented history. Done right, etckeeper will lead to a better record of what changes you made to the configuration and why, which improves your ability to recreate what you did, as well as understand why you did what you did. It also makes it easier to revert broken changes in a more granular fashion.
 
@@ -24,6 +28,7 @@ The following command should be run as root (e.g. prefixed with ``sudo `` or doa
 
 3. Execute the following commands as root, adjusted to suit you and your preferences
    
+   ```shell
     git config --global init.defaultBranch main
     git config --global user.name "root@yourserver (Daniel F. Dickinson)" # Obviously you want your name here
     git config --global user.email "dfdpublic@wildtechgarden.ca" # Obviously you want your email here
@@ -32,6 +37,7 @@ The following command should be run as root (e.g. prefixed with ``sudo `` or doa
     git config --global core.eol lf
     git config --global core.autocrlf false
     git config --global core.editor nano
+   ```
 
 4. Repeat for you non-root admin user (*without* ``sudo``), adjusted to suit your preferences. (Etckeeper uses the configured ``user.name`` and ``user.email`` of the original user (e.g. the ``sudo``-ing user for non-root admin ``sudo``-ing to ``root``) to set the author and comitter fields, so you need to set at least ``user.email`` and ``user.name`` for each user that will be using ``etckeeper``, even if through ``sudo``). 
 
@@ -67,8 +73,12 @@ Commit your changes
 
 1. Commit changes to ``etckeeper``
    
+   ```shell
     etckeeper commit "Configure etckeeper"
+   ```
 
 2. Commit the changes to LBU (not strictly necessary if you will be doing other changes before committing; just *don't forget* to commit to LBU).
    
-    lbu commit
+   ```shell
+   lbu commit
+   ```

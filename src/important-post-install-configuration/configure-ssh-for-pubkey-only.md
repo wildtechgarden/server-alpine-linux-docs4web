@@ -1,9 +1,13 @@
-# ConfigureSSHForPubkeyOnly
+---
+date: 2022-04-28
+title: "Configure SSH for pubkey only"
+tags: ["alpine","howtos","docs","linux","sysadmin-devops"]
+series: ["docs4web","alpine-linux-local-server"]
+---
 
-Created Thursday 28 April 2022
+# Configure SSH for pubkey only
 
-Overview
---------
+## Overview
 
 TBD
 
