@@ -10,9 +10,9 @@ series: ["docs4web","alpine-linux-local-server"]
 Obtain the official Alpine Linux image
 --------------------------------------
 
-### Choose tarball to download based on the model of Pi you have
+Choose tarball to download based on the model of Pi you have
 
-Partial table of model of Raspberry Pi to Linux kernel max architecture available (where aarch64 > armv7 > armhf). armhf should be a 'safe' choice for all models, but aarch64 is preferred when possible, then armv7, then armhf.
+* Partial table of model of Raspberry Pi to Linux kernel max architecture available (where aarch64 > armv7 > armhf). armhf should be a 'safe' choice for all models, but aarch64 is preferred when possible, then armv7, then armhf.
 
 | Model       | Arch       |
 |:----------- |:---------- |
@@ -29,9 +29,9 @@ Partial table of model of Raspberry Pi to Linux kernel max architecture availabl
 | Pi 3        | aarch64    |
 | Pi 4 B      | aarch64    |
 
-You should grab the appropriate tarball as well as sha256 and GnuPG signatures for that tarball, based on the arch available, which depends on your model (above).
+You should obtain the appropriate tarball as well as sha256 and GnuPG signatures for that tarball, based on the arch available, which depends on your model (above).
 
-**NOTE**: For up-to-date links/version you should [use the official download page](view-source:https://www.alpinelinux.org/downloads/), Raspberry Pi table.
+* **NOTE**: For up-to-date links/version you should [use the official download page](https://www.alpinelinux.org/downloads/), Raspberry Pi table.
 
 | Arch    | Last stable directory                                                                          |
 |:------- |:---------------------------------------------------------------------------------------------- |

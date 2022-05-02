@@ -13,11 +13,11 @@ These documents use only the 'main' repository, except in one or more [optional 
 
 In addition, these documents try to keep things DRY (don't repeat yourself) in order to avoid out-of-sync information on the same topic.
 
-## Install & initial configuration notes
+## Installation & configuration notes
 
 [Install as a server on a Raspberry Pi](install-on-raspberry-pi/_index.md) 
 
-[Install and configure base server](server-install-config/_index.md)
+[Install and configure base server (x86-64, Pi, and x86)](server-install-config/_index.md)
 
 [Do important post-install configuration](important-post-install-configuration.md)
 

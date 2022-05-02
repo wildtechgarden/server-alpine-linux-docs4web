@@ -15,39 +15,37 @@ If you are running headless but have an option of using a serial port on your co
 
 Encrypting the config and APK partition is not supported by Alpine Linux at the present time, so boots would fail with that option.
 
-Configure lbu.conf
-------------------
+## Configure lbu.conf
 
-1. Modify ``/etc/lbu/lbu.conf`` to look something like:
+1. Modify `/etc/lbu/lbu.conf` to look something like:
    
-   # what cipher to use with -e option
-   
-    DEFAULT_CIPHER=aes-256-cbc
+   ```shell
+   # What cipher to use with -e option
+   DEFAULT_CIPHER=aes-256-cbc
    
    # Uncomment the row below to encrypt config by default
+   ENCRYPTION=$DEFAULT_CIPHER
    
-    ENCRYPTION=$DEFAULT_CIPHER  
-   
-   # Uncomment below to avoid <media> option to 'lbu commit'
-   
-   # Can also be set to 'floppy'
-   
-    LBU_MEDIA=sda2
+   # Uncomment below to avoid needing 'media' option to 'lbu commit'
+   # Can also be set to 'floppy'   
+   LBU_MEDIA=sda2
    
    # Set the LBU_BACKUPDIR variable in case you prefer to save the apkovls
-   
    # in a normal directory instead of mounting an external media.
-   
    # LBU_BACKUPDIR=/root/config-backups
    
-    BACKUP_LIMIT=128
+   BACKUP_LIMIT=128
+   ```
    
-   We enable encryption and a history of up to 128 ``lbu commit`` actions. While this may seem like overkill, I personally 'commit early, commit often' and want to be able to restore to a working config if a break something. In addition the history should take up that much space, since if you have a large LBU, you are probably 'doing it wrong'.
-   
-    2. Move your previous backup out of the way (unless you know you won't want it back; you should store is somewhere protected though, as it is unecrypted).
+   We enable encryption and a history of up to 128 ``lbu commit`` actions. While this may seem like overkill, I personally 'commit early, commit often' and want to be able to restore to a working config if a break something. In addition the history should not take up that much space, since if you have a large LBU, you are probably 'doing it wrong'.
 
-2. Commit your changes
+2. Move your previous backup out of the way (unless you know you won't want it back; 
+   you should store is somewhere protected though, as it is unecrypted).
+
+3. Commit your changes
    
-    lbu commit -d
-   
-   You will be prompted to enter your passphrase twice. Do so.
+   ```shell
+   lbu commit -d
+   ```
+
+4. You will be prompted to enter your passphrase twice. Do so.

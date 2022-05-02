@@ -1,17 +1,20 @@
 ---
 date: 2022-05-01
-title: Verify downloaded installation media
+title: Download and verify installation media
 tags: ["alpine","configuration","docs","linux","security","sysadmin-devops","raspberry-pi","sbc"]
 series: ["docs4web","alpine-linux-local-server"]
 ---
 
-# Verify downloaded installation media
+# Download and verify installation media
 
-You should grab the appropriate install media as well as sha256 and GnuPG signatures for that media.
+## Download the installation media
 
-**NOTE**: For up-to-date links/versions you should [use the official download page](view-source:https://www.alpinelinux.org/downloads/) download table appropriate for your device.
+You should obtain the appropriate install media as well as sha256 and GnuPG signatures for that media.
 
-## Verify the tarball has the expected contents
+* **NOTE**: For up-to-date links/versions you should [use the official download page](https://www.alpinelinux.org/downloads/) download table appropriate for your device.
+* [Raspberry Pi installation media](../install-on-raspberry-pi/creating-initial-boot-media/obtain-and-verify-install-tarball.md) is somewhat unique, so be sure to read about it.
+
+## Verify the media has the expected contents
 
 ### Using SHA256
 
@@ -73,4 +76,4 @@ gpg --verify name-of-tarball.asc name-of-tarball # the second name-of-tarball is
 
 Where `name-of-tarball` includes the `.tar.gz`
 
-You will probably get a warning the signing key is untrusted. This is normal. Unfortunately the 'Web of Trust' that would have made that failing check useful has failed to materialize in any meaningful way.
+You will probably get message that the signature is good followed by a warning the signing key is untrusted. This is normal. Unfortunately the 'Web of Trust' that would have made that failing check useful has failed to materialize in any meaningful way.

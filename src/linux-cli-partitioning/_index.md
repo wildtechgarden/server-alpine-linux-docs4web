@@ -7,9 +7,11 @@ series: ["docs4web","alpine-linux-local-server"]
 
 # Partitioning on the Linux command line
 
+[Partitioning information in the official Alpine Linux User's Handbook](https://docs.alpinelinux.org/user-handbook/0.1a/Installing/manual.html#_partitioning_your_disk)
+
 ## Using parted
 
-Easiest but requires adding a package on Alpine and others (some distros include parted by default, others do not).
+Easiest of the command line options, but requires adding a package on Alpine and others (some distros include parted by default, others do not).
 
 TBD
 

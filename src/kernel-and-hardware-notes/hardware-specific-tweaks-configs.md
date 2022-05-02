@@ -7,13 +7,8 @@ series: ["docs4web","alpine-linux-local-server"]
 
 # Hardware-specific tweaks and configuration
 
-Overview
+Systems with No RTC (real-time clock)
 --------
-
-TBD
-
-System with No RTC (real-time clock)
-------------------------------------
 
 Includes the Raspberry Pi family of SBC (single board computers).
 

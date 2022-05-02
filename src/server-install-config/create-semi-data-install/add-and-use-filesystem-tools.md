@@ -10,3 +10,11 @@ series: ["docs4web","alpine-linux-local-server"]
 ## Overview
 
 You need to add the tools that will let you format one or more additional partitions of your choice.
+
+## F2FS
+
+```shell
+apk add f2fstools
+```
+
+## 
