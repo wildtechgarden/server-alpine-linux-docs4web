@@ -11,21 +11,21 @@ series: ["docs4web","alpine-linux-local-server"]
 
 Assuming the reboot was successful, it is time to make your system more useful.
 
-Otherwise see [FirstbootTroubleshooting](./FirstbootTroubleshooting.md)
+Otherwise see [Firstboot troubleshooting](../server-install-config/firstboot-troubleshooting.md)
 
 Commit changes at your preferred granularity
 --------------------------------------------
 
-Don't forget that these changes will not survive reboot unless you commit your changes. I like to 'commit early, commit often', but you may wish to commit less often. 
+Don't forget that these changes will not survive reboot unless you commit your changes. I like to 'commit early, commit often', but you may wish to commit less frequently. 
 
-To commit, execute the following as root:
+To commit, execute the following as your non-root admin user (if you installed `sudo` rather than `doas`, use `sudo` where we write `doas`) after completing some configuration:
 
-    lbu commit
+    doas lbu commit
 
 Some recommended first steps
 ----------------------------
 
-1. [+ConfigureSystemAndDataNetworkBackups](./RecommendedTweaksAndConfigs/ConfigureSystemAndDataNetworkBackups.md)
+1. [Configure automatic off-system backups](configure-off-system-backups.md)
 
 Some author preferences
 -----------------------
@@ -34,18 +34,6 @@ Some author preferences
 
 You may wish to implement some of these before completing 'system-related' preferences
 
-1. [+EnableColourfulPromptForDefaultAshAndOptionalBashShells](./RecommendedTweaksAndConfigs/EnableColourfulPromptForDefaultAshAndOptionalBashShells.md)
-2. [+AddManPages](./RecommendedTweaksAndConfigs/AddManPages.md)
-3. [+AddTmux](./RecommendedTweaksAndConfigs/AddTmux.md)
-4. [+EditMOTD](./RecommendedTweaksAndConfigs/EditMOTD.md)
-
-### System-related
-
-1. [+AddEtckeeper](./RecommendedTweaksAndConfigs/AddEtckeeper.md)
-2. [+AddEtckeeperGitRemoteForEtcBackup](./RecommendedTweaksAndConfigs/AddEtckeeperGitRemoteForEtcBackup.md)
-
-Useful notes and links
-----------------------
-
-* <https://wiki.alpinelinux.org/wiki/Setting_up_a_software_RAID_array> [+LocalCopyOfWikiRAIDSetupPage](./RecommendedTweaksAndConfigs/LocalCopyOfWikiRAIDSetupPage.md)
-* <https://wiki.alpinelinux.org/wiki/Setting_up_a_new_user>
+1. [Enable colourful and enhanced shell prompt](enable-colourful-shell-prompt.md)
+2. [Add tmux](add-tmux.md)
+3. [Edit message of the day (MOTD)](edit-motd.md)

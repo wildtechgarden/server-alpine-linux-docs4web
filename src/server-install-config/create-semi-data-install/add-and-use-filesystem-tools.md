@@ -66,3 +66,7 @@ Traditional Linux software RAID.
 ```shell
 apk add mdadm
 ```
+
+## Useful links
+
+<https://wiki.alpinelinux.org/wiki/Setting_up_a_software_RAID_array>

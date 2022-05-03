@@ -9,11 +9,11 @@ series: ["docs4web","alpine-linux-local-server"]
 
 ## Overview
 
-Unless you needed headless, or unattended reboots or power up (e.g. after power loss), it is highly recommended to use an encrypted configuration backup. This protects the data while the system is down (while the system up, the need to login, and the usual user access mechanism apply, but while powered down a FAT32 partition is easily read, or even an unencrypted ext4 partition.
+Unless you need headless, or unattended reboots or power up (e.g. after power loss), it is highly recommended to use an encrypted configuration backup. This protects the data while the system is down (while the system up, the need to login, and the usual user access mechanism apply, but while powered down a FAT32 partition is easily read, or even any other unencrypted partition.
 
 If you are running headless but have an option of using a serial port on your computer during boot (instead of keyboard and monitor) then you might want to read the docs on using serial console on Alpine Linux: <https://wiki.alpinelinux.org/wiki/Enable_Serial_Console_on_Boot.>
 
-Encrypting the config and APK partition is not supported by Alpine Linux at the present time, so boots would fail with that option.
+Encrypting the config and APK partition is not supported by default by Alpine Linux at the present time, so boots would fail with that option, unless you modify the initramfs.
 
 ## Configure lbu.conf
 
@@ -37,15 +37,23 @@ Encrypting the config and APK partition is not supported by Alpine Linux at the 
    BACKUP_LIMIT=128
    ```
    
-   We enable encryption and a history of up to 128 ``lbu commit`` actions. While this may seem like overkill, I personally 'commit early, commit often' and want to be able to restore to a working config if a break something. In addition the history should not take up that much space, since if you have a large LBU, you are probably 'doing it wrong'.
+   We enable encryption and a history of up to 128 ``lbu commit`` actions. While this may seem like overkill, I personally 'commit early, commit often' and want to be able to restore to a working config if a break something. In addition the history should not take up that much space, since if you have a large LBU, you are probably 'doing it wrong' for the procedure described in this documentation.
 
 2. Move your previous backup out of the way (unless you know you won't want it back; 
    you should store is somewhere protected though, as it is unecrypted).
 
-3. Commit your changes
+3. Commit your changes and remove the unecrypted overlay volume (LBU file) if you haven't decided to preserve it somewhere protected.
    
    ```shell
-   lbu commit -d
+   doas lbu commit -d
    ```
 
 4. You will be prompted to enter your passphrase twice. Do so.
+
+5. In normal use you would just
+   
+   ```shell
+   doas lbu commit
+   ```
+   
+   And enter you passphrase, twice. 

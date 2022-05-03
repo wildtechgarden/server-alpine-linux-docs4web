@@ -22,9 +22,9 @@ Which is potentially confusing, and is annoying in any event, once you have set 
 Configure [/etc/motd](file:///etc/motd)
 ---------------------------------------
 
-Simply execute (as your non-root admin user with sudo access, in this example):
+Simply execute:
 
-    sudoedit /etc/motd
+    doas vi /etc/motd
 
 Edit or replace the plaintext message here, save, and exit.
 
@@ -34,5 +34,5 @@ Commit your changes
 If you have been following along and applying this guide's recommendations:
 
 ```shell
-lbu commit
+doas lbu commit
 ```

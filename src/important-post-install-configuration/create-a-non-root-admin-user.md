@@ -50,3 +50,7 @@ Otherwise they will be lost on reboot.
 ```shell
 doas lbu commit
 ```
+
+## Useful links
+
+<https://wiki.alpinelinux.org/wiki/Setting_up_a_new_user>>

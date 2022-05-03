@@ -9,17 +9,21 @@ series: ["docs4web","alpine-linux-local-server"]
 
 ## Overview
 
-TBD
+Where possible it is a best practise to check your filesystem before mounting them (especially read-write) to ensure you are not working with a corrupted (and further damaging a) filesystem.
 
-Install vfat (fat32) and ext4 checkers
+## (Re)install the filesystem tools you need
+
+If you are following the recommendation to operate as non-root, the only thing to remember is to 'become root' (e.g. `doas`, `sudo`, or `su`) when executing the `apk add` commands, when following the [filesystem tool install guide from the install process](../server-install-config/create-semi-data-install/add-and-use-filesystem-tools.md).
+
+Enable localmount on default runlevel
 --------------------------------------
 
-    apk add dosfstools \
-     e2fsprogs \
-     dosfstools-doc # Optional if you don't need/want the man page or other docs \
-     e2fsprogs-docs # Likewise
+    doas rc-update add localmount default
 
-Enable localmount on boot and default runlevels
------------------------------------------------
+## Don't forget to commit your changes
 
-    rc-update add localmount boot default
+Otherwise they will be lost on reboot.
+
+```shell
+doas lbu commit
+```
