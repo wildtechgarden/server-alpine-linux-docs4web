@@ -1,6 +1,7 @@
 ---
 title: Backups up with Restic
 date: 2022-05-03
+draft: true
 ---
 
 # Backups with Restic

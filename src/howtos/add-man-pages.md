@@ -18,7 +18,10 @@ Add the man page command and base man pages
 -------------------------------------------
 
 Execute (as root):
+
+```shell
     apk add mandoc mandoc-doc mandoc-apropos man-pages
+```
 
 Add man pages for packages already on system
 --------------------------------------------
@@ -28,7 +31,7 @@ This will vary depending on what you have installed at this point. Here is an ex
     apk add apk-tools-doc \
      busybox-doc \
      chrony-doc \
-     e2fsprogs-doc \
+     f2fs-tools-doc \
      etckeeper-doc \
      findutils-doc \
      fstrm-doc \

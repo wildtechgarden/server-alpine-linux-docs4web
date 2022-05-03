@@ -20,11 +20,15 @@ The following command should be run as root (e.g. prefixed with ``sudo `` or doa
 
 1. Make sure apk package list is up to date
    
+   ```shell
     apk update
+   ```
 
 2. Add ``git``
    
+   ```shell
     apk add git
+   ```
 
 3. Execute the following commands as root, adjusted to suit you and your preferences
    
@@ -39,7 +43,7 @@ The following command should be run as root (e.g. prefixed with ``sudo `` or doa
     git config --global core.editor nano
    ```
 
-4. Repeat for you non-root admin user (*without* ``sudo``), adjusted to suit your preferences. (Etckeeper uses the configured ``user.name`` and ``user.email`` of the original user (e.g. the ``sudo``-ing user for non-root admin ``sudo``-ing to ``root``) to set the author and comitter fields, so you need to set at least ``user.email`` and ``user.name`` for each user that will be using ``etckeeper``, even if through ``sudo``). 
+4. Repeat for you non-root admin user (*without* ``sudo``), adjusted to suit your preferences. (Etckeeper uses the configured ``user.name`` and ``user.email`` of the original user (e.g. the ``sudo``-ing user for non-root admin ``sudo``-ing to ``root``) to set the author and committer fields, so you need to set at least ``user.email`` and ``user.name`` for each user that will be using ``etckeeper``, even if through ``sudo``). 
 
 Install and configure etckeeper
 -------------------------------
@@ -50,9 +54,9 @@ Install and configure etckeeper
 
 2. Edit ``/etc/etckeeper/etckeeper.conf`` so it has the following snippets in place of the defaults for these items:
    
-    1. Don't autocommit every day; this just creates noise if we are doing things right
-       
-       AVOID_DAILY_AUTOCOMMITS=1
+     1. Don't autocommit every day; this just creates noise if we are doing things right
+        
+        AVOID_DAILY_AUTOCOMMITS=1
 
 3. Just avoids a warning that doesn't help us much
    

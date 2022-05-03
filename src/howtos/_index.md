@@ -13,8 +13,10 @@ In alphabetical order
 
 [Add etckeeper git remote and push on commit](add-etckeeper-git-remote.md)
 
+[Add on-system documentation, including the 'man'(ual) command](add-man-pages.md)
+
 [Add nano and use as default editor](add-nano-and-use-as-default-editor.md)
 
-[Enable colourful shell prompt system-wide](enable-colourful-shell-prompt.md)
+[Encrypted off-system backups using restic](backing-up-with-restic.md)
 
 [Install and configure restic/rest-server](restic-rest-server-install-config.md)
