@@ -15,6 +15,8 @@ Headless and cloud / production deployments remain to be added (ideally in a mat
 
 Also not documented here is fully 'automated' installation and configuration; that likely will be added based on these pages, but in another set of guides.
 
+Finally, these guides would also work for systems in which one uses a flash device for the OS and OS data (e.g. a system running from a USB flash drive).
+
 Guides
 ------
 

@@ -149,9 +149,41 @@ Example with 'config' mounted on `/media/mmcblk0p2`
 
 In this case you should create a volume, add to `/etc/fstab`, and `mount` as you would for any command line Linux system.
 
-#### Bind mount some /var/lib directories
+#### Bind mount some /var/lib sub-directories (base install)
 
-TBD
+You may need to repeat this procedure for directories for some packages you install.
+
+It is only useful to do this for packages that need to preserve data for use across reboot and which don't need the preserved data until after the 'sysinit' and 'boot' phases have completed, since the 'config' partition will not be available until then.
+
+##### Network time client 'drift'
+
+Assuming you have used the default NTP client (`chronyd`):
+
+The directory to preserve is `/var/lib/crhony`. One could create `/media/mmcblk0p2/data/var/lib/chrony` and have an `fstab` with
+
+```shell
+/media/mmcblk0p2/data/var/lib/chrony /var/lib/chrony none bind,rw 0 0
+```
+
+##### Randomness for seeding next boot
+
+This is needed during boot so doesn't make sense unless you are modifying the initramfs.
+
+The directory to preserve is `/var/lib/seedrng`. One could create `/media/mmcblk0p2/data/var/lib/seedrng` and have an `fstab` with
+
+```shell
+/media/mmcblk0p2/data/var/lib/seedrng /var/lib/seedrng none bind,rw 0 0
+```
+
+##### DHCP client lease and other preferably persistent data
+
+This is needed during boot so doesn't make sense unless you are modifying the initramfs.
+
+The directory to preserve is `/var/lib/udhcpd`. One could create `/media/mmcblk0p2/data/var/lib/udhcpd` and have an `fstab` with
+
+```shell
+/media/mmcblk0p2/data/var/lib/uhdcpd /var/lib/udhcpd none bind,rw 0 0
+```
 
 #### Mount /var/log on non-flash storage, if available
 
