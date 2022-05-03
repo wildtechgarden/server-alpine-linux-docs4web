@@ -14,7 +14,7 @@ It is generally considered an administrative best practise to avoid logging in a
 Create a new user
 -----------------
 
-    adduser -g "Daniel F. Dickinson - Admin,,," newadmin newadmin # Obiously use your name or pseudonym hereu
+    adduser -g ",,," newadmin newadmin
 
 Add doas or sudo
 ----------------
@@ -30,9 +30,23 @@ OR
 doas: allow your admin user to 'become root'
 ------------------------------------------------------
 
-TBD (group wheel)
+Add your `newadmin` user as a `doas` user. Edit `/etc/doas.d/doas.conf` so that it contains:
+
+```shell
+permit newadmin
+```
 
 Login as new user and test access
 -----------------------------------------
 
-TBD
+1. In a new virtual terminal (e.g via `Ctrl-Alt-F2`) login at the `login` prompt as your `newadmin` user or start a new SSH session as `newadmin`.
+2. Execute `doas ls -al /root`
+3. You should see the directory listing for `/root` which is owned and readable only by the `root` user.
+
+## Don't forgot to commit your changes
+
+Otherwise they will be lost on reboot.
+
+```shell
+doas lbu commit
+```

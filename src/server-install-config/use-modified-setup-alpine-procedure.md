@@ -16,14 +16,11 @@ Use 'setup-alpine', cautiously
 
 Some steps (like setting up the network) will have the answers you previously gave. This can save typing if you want to keep the same answer, but if you wish to change your answers, you can.
 
-After setting up (or disabling) SSH you should see a prompt asking if you want to use  your boot partition to store your configuration: You should say no to that prompt.
-
-At the next prompt, the default option of those presented should be the config partition you created and mounted earlier (examples: `mmcblk0p2` or `sda2`).  If so, just press the \[ENTER] key at this prompt. If not enter the config partition you created (the `mmcblk0p2` or `sda2` examples, above) and then the \[ENTER] key.
-
-Now you should be at a shell prompt and should [commit your settings to the LBU (configuration store, which will be located on your config partition)](commit-lbu.md).
+* After setting up (or disabling) SSH you should see a prompt asking if you want to use  your boot partition to store your configuration: You should say no to that prompt.
+* At the next prompt, the default option of those presented should be the config partition you created and mounted earlier (examples: `mmcblk0p2` or `sda2`).  If so, just press the \[ENTER] key at this prompt. If not enter the config partition you created (the `mmcblk0p2` or `sda2` examples, above) and then the \[ENTER] key.
+* Now you should be at a shell prompt and should [commit your settings to the LBU (configuration store, which will be located on your config partition)](commit-lbu.md).
 
 ## Alternatively use automation or a more manual setup
 
-* [Automated installation](https://docs.alpinelinux.org/user-handbook/0.1a/Installing/setup_alpine.html#_answer_files) is another option, and can save a great deal of time when you are installing many similar systems.
-* [Semi-automatic installation](https://docs.alpinelinux.org/user-handbook/0.1a/Installing/manual.html) can be a good choice, especially when first figuring out how you wish the system to be configured.
-* 
+* [Automated installation (from the Alpine Linux docs)](https://docs.alpinelinux.org/user-handbook/0.1a/Installing/setup_alpine.html#_answer_files) is another option, and can save a great deal of time when you are installing many similar systems.
+* [Semi-automatic installation (from the Alpine Linux docs)](https://docs.alpinelinux.org/user-handbook/0.1a/Installing/manual.html) can be a good choice, especially when first figuring out how you wish the system to be configured.

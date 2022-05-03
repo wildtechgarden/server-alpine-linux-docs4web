@@ -23,12 +23,13 @@ Guides
 3. [Boot from the install media (Alpine Linux wiki)](https://wiki.alpinelinux.org/wiki/Installation#Booting_from_external_devices)
 4. [Create a semi-data/semi-diskless install](create-semi-data-install/_index.md)
 5. [Use modified setup-alpine procedure](use-modified-setup-alpine-procedure.md)
-6. [Add essential packages](add-essential-packages.md)
-7. [Commit LBU](commit-lbu.md)
-8. [Reboot](reboot.md) 
-9. [Kernel and hardware notes - hardware specific tweaks & configuration](../kernel-and-hardware-notes/hardware-specific-tweaks-configs.md)
+6. [Commit LBU](commit-lbu.md)
+7. [Reboot](reboot.md)
+8. [Kernel and hardware notes - hardware specific tweaks & configuration](../kernel-and-hardware-notes/hardware-specific-tweaks-configs.md)
 
 ## See also
+
+[Important post install configuration](../important-post-install-configuration/_index.md)
 
 [Recommended tweaks and configuration](../recommended-tweaks-and-configs/_index.md)
 

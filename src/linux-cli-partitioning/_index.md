@@ -13,7 +13,8 @@ series: ["docs4web","alpine-linux-local-server"]
 
 Easiest of the command line options, but requires adding a package on Alpine and others (some distros include parted by default, others do not).
 
-TBD
+* [Setup network required for installation of needed packages](setup-network-for-package-install.md)
+* TBD
 
 ## Using fdisk
 
@@ -25,4 +26,5 @@ TBD
 
 Also requires adding a package, but can be automated more easily than parted or fdisk.
 
-TBD
+* [Setup network required for installation of needed packages](setup-network-for-package-install.md)
+* TBD

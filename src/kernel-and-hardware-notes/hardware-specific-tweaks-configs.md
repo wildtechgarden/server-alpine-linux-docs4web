@@ -12,17 +12,17 @@ Systems with No RTC (real-time clock)
 
 Includes the Raspberry Pi family of SBC (single board computers).
 
-1. Disable hwclock (if enabled)
+1. Disable hwclock (if enabled; on the Raspberry Pi it has already been disabled).
    
    ```shell
    service hwclock stop
-   rc-update hwclock disable boot default
+   rc-update hwclock disable boot
    ```
 
-2. Enable swclock
+2. Enable swclock (only useful if `/sbin/openrc-run` is preserved across boots. For a system mode (classic) install this helps. For a diskless, data, or our hybrid install, it isn't. Also note that for the Raspberry Pi it comes pre-enabled.
    
    ```shell
-   rc-update swclock enable boot default
+   rc-update swclock enable boot
    service swclock start
    ```
 

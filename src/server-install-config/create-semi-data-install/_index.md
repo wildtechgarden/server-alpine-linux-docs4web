@@ -13,6 +13,8 @@ This guide presumes you are booted into a fresh install media (no stored configu
 
 This configuration is like diskless mode except that `home`, parts of `/var`, and others are mounted for persistence. It is also like data install except that only _parts_ of `/var` are made persistent.
 
+**Note** that with diskless, data, and our hybrid install, `lbu commit` only stores changes that are used after the 'boot' runlevel completes and cannot modify the 'boot' or 'sysinit' runlevels. While there are ways (if using a writable boot medium) to make modification in those early stages, doing so is out of scope for this documentation.
+
 Organize and configure storage on the system
 ------------------------------
 
@@ -24,14 +26,15 @@ We don't cover using encrypted storage; explaining the details is out of scope.
 
 If you followed [Installation on Raspberry Pi](../../install-on-raspberry-pi/_index.md) the diskless part is already the default, so skip to [add a config partition](#ad-a-and39configand39-partition).
 
-#### For non-Raspberry Pi systems
+#### For x86_64 or x86 systems
 
 ##### Create the boot partition on the system's storage
 
 * You need to add at least one package, which means doing some network setup. Then you can create the filesystem.
-* Use fat32 as boot partition if BIOS boot; for UEFI use FAT 32 and then mark as ESP (see [Linux command line partitioning](../../linux-cli-partitioning/_index.md)).
 * [Setup network required for installation of needed packages](setup-network-for-package-install.md)
+* Use fat32 or ext2/ext4 as boot partition if BIOS boot; for UEFI use FAT 32 and then mark as ESP (see [Linux command line partitioning](../../linux-cli-partitioning/_index.md)).
 * [Add and use filesystem tools to create your choice of filesystem](add-and-use-filesystem-tools.md)
+* We can't save the configuration yet, so these packages will disappear on reboot. That will not prevent the system from booting, as long as you avoid boot on LVM or boot on RAID.
 
 ##### Copy boot files to the boot partition
 
@@ -43,14 +46,14 @@ TBD
 
 ##### Reboot
 
+* You may need to update your system's configuration (e.g. BIOS setup) to boot from the new boot partition before Alpine will start up on the new system.
+* It may also help to remove the installation media once the system has started to reset during reboot.
+
 ```shell
 reboot
 ```
 
-* You may need to update your system's configuration to boot from the new boot partition before Alpine will start up on the new system.
-* It may also help to remove the installation media once the system has started to reset during reboot.
-
-Now you system is operating like the initial boot of a Raspberry Pi.
+The rest of this guide is now in sync regardless of whether you are starting with a Pi (or other ARM) install, or an x86_64/x86 system.
 
 ### Add a 'config' partition
 
@@ -60,9 +63,9 @@ Now you system is operating like the initial boot of a Raspberry Pi.
 
 * Useful if your media has limited write cycles even if much more than USB/SD flash (e.g. SSD, NVMe, etc)
 
-* This author's recommended filesystem for the 'config' partition regardless of storage type.
+* This is this author's recommended filesystem for the 'config' partition regardless of storage type.
 
-* no 2 GB file size limit but it's still not a good sign if your overlays are getting that large (for 'semi-data' install)
+* This filesystem has no 2 GB file size limit but it's still not a good sign if your overlays are getting that large (for 'semi-data' install)
 
 * If you have < 8 GB of total available disk you may want to only have the boot partition, maybe a swap partition (non-flash drives only), and the 'config' partition
 
@@ -94,7 +97,9 @@ Now you system is operating like the initial boot of a Raspberry Pi.
 
 ### All other partitions
 
-#### For large non-flash storage use LVM and ext4
+#### Options
+
+##### For large non-flash storage use LVM and ext4
 
 * This makes resizing partitions at least possible, with a filesystem (ext4) that is well-supported by Alpine
 * Instead of LVM+ext4 one could use btrfs or zfs, or LVM+some other filesystem, but this is out of scope and less supported.
@@ -102,19 +107,67 @@ Now you system is operating like the initial boot of a Raspberry Pi.
 * Once you create the volume, create the filesystem,
 * Add to fstab
 
-#### For small storage (<= 8 GB)
+##### For small storage (<= 8 GB)
 
-Don't use additional partitions just use boot, config, and maybe swap (non-flash)
+Don't use additional partitions just use boot, config, and maybe swap (non-flash).
 
-#### For large flash storage (including SD cards), use f2fs directly
+##### For large flash storage (including SD cards), use f2fs directly
 
 * We need to minimize writes, and to use an appropriate filesystem. Also, no LVM.
 * Since (at least for non-UEFI) the boot structure requires MS-DOS partition table type (aka disk label), use logical partitions so you can have the partitions you want.
 * Prefer fewer and larger partitions since resizing would be difficult in this scenario.
-* Also may want to keep logging on ``tmpfs`` unless one requires persistence across reboots (and then this author recommends using non-flash external storage or sending to logs to another system with non-flash disks).
-* Trying to do resizing here will not make you happy. Also we will be bind mounting specific (low-write) partitions, so would need a lot of small partitions, which is hard to manage. Keep it simple.
+* Also one may want to keep logging on `tmpfs` unless one requires persistence across reboots (and then this author recommends using non-flash external storage or sending to logs to another system with non-flash disks).
+* Trying to do resizing here will not make you happy. Also we will be mounting specific (low-write) partitions (using bind mount), so would need a lot of small partitions to get the same effect, which is hard to manage.
+
+#### Mount (or bind mount) /home
+
+##### Small storage or only flash storage
+
+That means you have configured one 'boot' partition an one 'config' on the storage, so in order to make more than what you 'commit' via LBU persistent you need to point the directory (or directories) each to a corresponding directory on the 'config' partition.
+
+Example with 'config' mounted on `/media/mmcblk0p2`
+
+1. Make sure `/home` exists and is empty
+
+2. `mkdir -p /media/mmcblk0p2/data/home`
+
+3. Edit `/etc/fstab` to add
+   
+   ```shell
+   /media/mmcblk0p2/data/home /home none bind,rw 0 0
+   ```
+
+4. `mount /home` to activate the bind mount
+
+5. Issue `df -h`; it should list the new mount
+
+6. Issue `mount | grep /home`; it should also list the new mount
+
+7. `/home` is now ready for storing you user home directories.
+
+##### Large non-flash storage
+
+In this case you should create a volume, add to `/etc/fstab`, and `mount` as you would for any command line Linux system.
+
+#### Bind mount some /var/lib directories
+
+TBD
+
+#### Mount /var/log on non-flash storage, if available
+
+Keeping `/var/log` persistent is sometimes required, but logging usually involves much writing to storage and quickly uses flash write cycles. In addition having `/var/log` as a separate partition limits the damage that can occur when some process start spamming the logs. If the logs are in their own partition, it avoids all of `/var` (or the entire filesystem if you only have one big partition) becoming full and bringing the system to its knees.
+
+If you do not have non-flash storage available you should prefer sending the logs to another system (remote syslog) to using even a limited log partition.
+
+If you want a separate `/var/log`, you should create a volume on non-flash storage, add to `/etc/fstab`, and `mount` as you would for any command line Linux system.
+
+However, before doing `mount` you probably want to move the current `/var/log` contents to the new location (by temporarily mounting the new location on `/mnt`, halting any logging processes, doing `mv /var/log/* /mnt/`, and `umount /mnt`).
 
 Remove partitioning tools
 -------------------------
 
-* In the interests of saving space on the system during normal use and reducing chances of human error, remove ``parted`` if you used that for partitioning
+In the interests of saving space on the system during normal use and reducing chances of human error, remove `parted` if you used that for partitioning.
+
+## Next, commit (preserve) your changes
+
+[Commit to an 'overlay file' using the Local Backup Utility (LBU)](../commit-lbu.md)
