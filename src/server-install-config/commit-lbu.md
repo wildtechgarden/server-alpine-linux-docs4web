@@ -15,6 +15,6 @@ Once you are sure everything is correct for the initial boot into your configure
 Do the commit (unencrypted)
 ---------------------------
 
-For the initial commit and reboot use an unencrypted LBU (to make sure everything works).
+For the initial commit and reboot, use an unencrypted LBU (to make sure everything works).
 
     lbu commit

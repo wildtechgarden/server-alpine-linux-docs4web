@@ -54,9 +54,9 @@ Install and configure etckeeper
 
 2. Edit ``/etc/etckeeper/etckeeper.conf`` so it has the following snippets in place of the defaults for these items:
    
-     1. Don't autocommit every day; this just creates noise if we are doing things right
-        
-        AVOID_DAILY_AUTOCOMMITS=1
+    1. Don't autocommit every day; this just creates noise if we are doing things right
+       
+       AVOID_DAILY_AUTOCOMMITS=1
 
 3. Just avoids a warning that doesn't help us much
    

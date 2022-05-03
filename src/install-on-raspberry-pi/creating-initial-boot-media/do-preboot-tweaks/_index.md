@@ -1,12 +1,13 @@
+---
+date: 2022-04-29
+title: Do pre-boot tweaks
+tags: ["alpine","configuration","docs","linux","sysadmin-devops","raspberry-pi","sbc"]
+series: ["docs4web","alpine-linux-local-server"]
+---
+
 # Do pre-boot tweaks
 
-Created Friday 29 April 2022
-
-Overview
---------
-
-On Windows 10
--------------
+## On Windows 10
 
 TBD
 

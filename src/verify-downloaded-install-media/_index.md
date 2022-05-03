@@ -23,7 +23,7 @@ Just a matching check (i.e. correct download contents)
 #### Linux
 
 ```shell
-sha256sum -c install-tarball-name.sha256
+sha256sum -c install-media-name.sha256
 ```
 
 #### Mac OS
@@ -31,13 +31,13 @@ sha256sum -c install-tarball-name.sha256
 _Untested_ due to lack of Mac on which to test. Would a search engine lie to me?
 
 ```shell
-shasum -a 256 -c install-tarball-name.sha256
+shasum -a 256 -c install-media-name.sha256
 ```
 
 #### Windows 10 (PowerShell)
 
 ```powershell
-(Get-FileHash 'install-tarball-name').Hash -eq (Get-Content .\install-tarball-name.sha256)
+(Get-FileHash 'install-media-name').Hash -eq (Get-Content .\install-media-name.sha256)
 ```
 
 ### Using GnuPG
@@ -71,9 +71,9 @@ The key is also available at <https://alpinelinux.org/keys/ncopa.asc> although g
 #### Check the tarball matches the signature
 
 ```shell
-gpg --verify name-of-tarball.asc name-of-tarball # the second name-of-tarball is optional
+gpg --verify name-of-media.asc name-of-media # the second name-of-media is optional
 ```
 
-Where `name-of-tarball` includes the `.tar.gz`
+Where `name-of-media` includes the extension (e.g. `.tar.gz` or `.iso`)
 
 You will probably get message that the signature is good followed by a warning the signing key is untrusted. This is normal. Unfortunately the 'Web of Trust' that would have made that failing check useful has failed to materialize in any meaningful way.

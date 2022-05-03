@@ -5,11 +5,11 @@ tags: ["alpine","howtos","docs","linux","sysadmin-devops"]
 series: ["docs4web","alpine-linux-local-server"]
 ---
 
-# # HowTos
+# HowTos
 
 In alphabetical order
 
-[Add etckeeper for `/etc` backup](add-etckeeper)
+[Add etckeeper for '/etc' backup](add-etckeeper.md)
 
 [Add etckeeper git remote and push on commit](add-etckeeper-git-remote.md)
 

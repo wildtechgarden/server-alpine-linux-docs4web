@@ -41,11 +41,11 @@ If you have two factor authentication enabled on your git server, or are just fo
    etckeeper vcs config credential.https://gitserver.example.com youruserid # Adjust using your git server and git userid
    ```
    
-     2. Add your git server as a 'remote' to the local etckeeper repo:
-        
-        ```shell
-        etckeeper vcs remote add origin https://gitserver.example.com/example-com-etckeeper/systemname.git # Adjust using your git server and system name
-        ```
+    2. Add your git server as a 'remote' to the local etckeeper repo:
+       
+       ```shell
+       etckeeper vcs remote add origin https://gitserver.example.com/example-com-etckeeper/systemname.git # Adjust using your git server and system name
+       ```
 
 2. Push the repo so far to `gitserver.example.com` and make your 'origin' remote the default 'upstream' for the 'main' branch
    
@@ -62,11 +62,11 @@ Case 2: Connection and authentication via SSH
 
 1. Make sure you have have the private key for the public key you have at `gitserver.example.com` (not a real server)
    
-     2. Add your git server as a 'remote' to the local etckeeper repo:
-        
-        ```shell
-        etckeeper vcs remote add origin ssh://git@gitserver.example.com/example-com-etckeeper/systemname.git # Adjust using your git server and system name
-        ```
+    2. Add your git server as a 'remote' to the local etckeeper repo:
+       
+       ```shell
+       etckeeper vcs remote add origin ssh://git@gitserver.example.com/example-com-etckeeper/systemname.git # Adjust using your git server and system name
+       ```
 
 2. Push the repo so far to ``gitserver.example.com`` and make your 'origin' remote the default 'upstream' for the 'main' branch
    

@@ -7,12 +7,7 @@ series: ["docs4web","alpine-linux-local-server"]
 
 # Setup network required for package installation
 
-## Overview
-
-TBD
-
-Use Alpine Linux setup sub-scripts for network/DNS
---------------------------------------------------
+## Use Alpine Linux setup sub-scripts for network/DNS
 
 1. Execute `setup-keymap` # To make sure you can successfully do keyboard input
 2. Execute `setup-hostname`.

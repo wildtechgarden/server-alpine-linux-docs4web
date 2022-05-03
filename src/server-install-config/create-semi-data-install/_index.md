@@ -24,7 +24,7 @@ We don't cover using encrypted storage; explaining the details is out of scope.
 
 #### For Raspberry Pi systems
 
-If you followed [Installation on Raspberry Pi](../../install-on-raspberry-pi/_index.md) the diskless part is already the default, so skip to [add a config partition](#ad-a-and39configand39-partition).
+If you followed [Installation on Raspberry Pi](../../install-on-raspberry-pi/_index.md) the diskless part is already the default, so skip to [add a config partition](#add-a-and39configand39-partition).
 
 #### For x86_64 or x86 systems
 
@@ -199,7 +199,3 @@ Remove partitioning tools
 -------------------------
 
 In the interests of saving space on the system during normal use and reducing chances of human error, remove `parted` if you used that for partitioning.
-
-## Next, commit (preserve) your changes
-
-[Commit to an 'overlay file' using the Local Backup Utility (LBU)](../commit-lbu.md)

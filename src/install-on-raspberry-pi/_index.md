@@ -23,6 +23,6 @@ Guides
 
 ## Existing Documentation
 
-There are guides that are a bit of a mess on the Alpine wiki
+There are guides that are a bit of a mess on the [Alpine wiki](https://wiki.alpinelinux.org/)
 
 https://wiki.alpinelinux.org/wiki/Raspberry_Pi https://wiki.alpinelinux.org/wiki/Classic_install_or_sys_mode_on_Raspberry_Pi

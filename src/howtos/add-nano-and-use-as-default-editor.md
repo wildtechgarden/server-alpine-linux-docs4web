@@ -5,7 +5,7 @@ tags: ["alpine","howtos","docs","linux","sysadmin-devops"]
 series: ["docs4web","alpine-linux-local-server"]
 ---
 
-# # Add nano and use as default editor
+# Add nano and use as default editor
 
 ## Overview
 
@@ -21,7 +21,7 @@ Install nano
 Add a profile snippet to make nano the default editor
 -----------------------------------------------------
 
-This change will apply to 'sh' (ask/bash/dash/etc) shells that are login shells, or subhsells of a login shell. That means you will need to logout and log back in to see the effects of enabling this (or conversely disabling it).
+This change will apply to 'sh' (ask/bash/dash/etc) shells that are login shells, or sub-shells of a login shell. That means you will need to logout and log back in to see the effects of enabling this (or conversely disabling it).
 
 Create ``/etc/profile.d/default_editor.sh`` with the following contents:
 

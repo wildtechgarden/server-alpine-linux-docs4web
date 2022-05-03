@@ -7,10 +7,6 @@ series: ["docs4web","alpine-linux-local-server"]
 
 # Copy tarball to boot under Gnome
 
-## Overview
-
-TBD
-
 ## Steps
 
 Screenshots are from GNOME but most GUI desktops are similar.

@@ -31,14 +31,6 @@ In addition, these documents try to keep things DRY (don't repeat yourself) in o
 
 --------
 
-The first member of Daniel Dickinson's 'Docs4Web' collection of repositories.
-
-Docs4Web is (to be) a collection of documents in plain Markdown format that is intended for inclusion both on [Daniel's technical and professional website](https://www.wildtechgarden.ca/) as well as in the projects which are documented, if applicable. In this case the hope is these docs will be accepted for integration into the [Alpine Linux Docs](https://docs.alpinelinux.org/) or [Alpine Linux Wiki](https://wiki.alpinelinux.org/) or some combination of those.
-
-In addition, these documents try to keep things DRY (don't repeat yourself) in order to avoid out-of-sync information on the same topic.
-
---------
-
 Copyright © 2022 Daniel F. Dickinson
 
 Licensed under the Creative Commons Attribution Share-Alike 4.0 International license.

@@ -19,7 +19,7 @@ You may change this message by editing /etc/motd.
 
 Which is potentially confusing, and is annoying in any event, once you have set up your system. Fortunately changing it is easy.
 
-Configure [/etc/motd](file:///etc/motd)
+Configure '/etc/motd'
 ---------------------------------------
 
 Simply execute:

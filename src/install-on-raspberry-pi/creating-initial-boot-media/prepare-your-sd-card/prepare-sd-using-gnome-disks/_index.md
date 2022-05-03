@@ -7,9 +7,7 @@ series: ["docs4web","alpine-linux-local-server"]
 
 # Prepare SD card using GNOME Disks
 
-## Overview
 
-TBD
 
 ## Procedure
 

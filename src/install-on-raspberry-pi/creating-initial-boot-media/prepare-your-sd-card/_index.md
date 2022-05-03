@@ -7,8 +7,6 @@ series: ["docs4web","alpine-linux-local-server"]
 
 # Prepare your SD card
 
-## Overview
-
 ## Partition the SD card
 
 ### On Windows 10

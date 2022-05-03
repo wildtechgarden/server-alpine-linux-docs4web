@@ -20,18 +20,18 @@ In our examples we have been using the username `newadmin`.
    
    Here are some guides on how to do that.
    
-     * [How Do I Generate SSH Keys? - Vultr.com](https://www.vultr.com/docs/how-do-i-generate-ssh-keys/)
-     * [Connecting to GitHub with SSH - GitHub Docs](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)
-     * [Scaleway's Guide for SSH key generation](https://www.scaleway.com/en/docs/console/my-project/how-to/create-ssh-key/)
-     * [Creating and connecting to your first Public Cloud instance | OVH Guides](https://docs.ovh.com/gb/en/public-cloud/public-cloud-first-steps/#step-1-creating-ssh-keys)
-       2* On the server, logged in as `newadmin`
-       3* `cd ~` (Make sure you are in the base of your home directory)
-       4* `chmod 0700 .` (Make the home directory accessible only by `newamdin`)
-       5* `mkdir p -m 0700 .ssh` (Make the standard directory for holding SSH keys, and make it accessible only by `newadmin`, if the directory does not already exist).
-       6* `cd .ssh`
-       7* `touch authorized_keys` (Make an empty file (`authorized_keys`) for public keys that are accepted for login, if the file does not already exist).
-       8* `chmod 0600 authorized_keys` (Make the `authorized_keys` file accessible only by `newadmin` and the SSH server).
-       9* Add your public key, which you generated above, to `authorized_keys`. You can add as many as you wish, one per line.
+    * [How Do I Generate SSH Keys? - Vultr.com](https://www.vultr.com/docs/how-do-i-generate-ssh-keys/)
+    * [Connecting to GitHub with SSH - GitHub Docs](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)
+    * [Scaleway's Guide for SSH key generation](https://www.scaleway.com/en/docs/console/my-project/how-to/create-ssh-key/)
+    * [Creating and connecting to your first Public Cloud instance | OVH Guides](https://docs.ovh.com/gb/en/public-cloud/public-cloud-first-steps/#step-1-creating-ssh-keys)
+      2* On the server, logged in as `newadmin`
+      3* `cd ~` (Make sure you are in the base of your home directory)
+      4* `chmod 0700 .` (Make the home directory accessible only by `newamdin`)
+      5* `mkdir p -m 0700 .ssh` (Make the standard directory for holding SSH keys, and make it accessible only by `newadmin`, if the directory does not already exist).
+      6* `cd .ssh`
+      7* `touch authorized_keys` (Make an empty file (`authorized_keys`) for public keys that are accepted for login, if the file does not already exist).
+      8* `chmod 0600 authorized_keys` (Make the `authorized_keys` file accessible only by `newadmin` and the SSH server).
+      9* Add your public key, which you generated above, to `authorized_keys`. You can add as many as you wish, one per line.
 
 Verify login
 ------------
