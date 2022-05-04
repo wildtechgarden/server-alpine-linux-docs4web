@@ -18,9 +18,9 @@ Screenshots are from GNOME but most GUI desktops are similar.
    [![Initial directory when choosing directory in which to extract install tarball](10-directory-chooser-for-extracting-install-tarball.png)](10-directory-chooser-for-extracting-install-tarball.png)
 
 3. Select the boot partition of the SD card as extraction destination
-   [![We have selected the boot partition as the destination for extracting the install tarball](11-we-have-selected-the-boot-partition-for-extracting-install-tarball.png)](11-we-have-select-the-boot-partition-for-extracting-install-tarball.png)
+   [![We have selected the boot partition as the destination for extracting the install tarball](11-we-have-selected-the-boot-partition-for-extracting-install-tarball.png)](11-we-have-selected-the-boot-partition-for-extracting-install-tarball.png)
 
-4. The result will be a directory containing the boot files on the boot partition; we actually want the files in the top-level (root) of the boot parition.
+4. The result will be a directory containing the boot files on the boot partition; we actually want the files in the top-level (root) of the boot partition.
    [![File manager showing directory creating boot files created in the boot partition](12-result-of-extracting-install-tarball-to-boot-partition.png)](12-result-of-extracting-install-tarball-to-boot-partition.png)
 
 5. Therefore, select all files in the directory that was created (e.g. in the file manager, browse into the directory and press \[Ctrl-A]).
