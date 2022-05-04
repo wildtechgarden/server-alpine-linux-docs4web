@@ -1,6 +1,6 @@
 ---
 date: 2022-04-28
-title: "Reboot"]
+title: ["Reboot"]
 series: ["docs4web","alpine-linux-local-server"]
 ---
 
