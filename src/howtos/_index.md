@@ -16,7 +16,3 @@ In alphabetical order
 [Add on-system documentation, including the 'man'(ual) command](add-man-pages.md)
 
 [Add nano and use as default editor](add-nano-and-use-as-default-editor.md)
-
-[Encrypted off-system backups using restic](backing-up-with-restic.md)
-
-[Install and configure restic/rest-server](restic-rest-server-install-config.md)
