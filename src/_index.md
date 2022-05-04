@@ -34,5 +34,3 @@ In addition, these documents try to keep things DRY (don't repeat yourself) in o
 Copyright © 2022 Daniel F. Dickinson
 
 Licensed under the Creative Commons Attribution Share-Alike 4.0 International license.
-
-See [LICENSE](../LICENSE) in this repository.
