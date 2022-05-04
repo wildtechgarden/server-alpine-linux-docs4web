@@ -27,7 +27,7 @@ Screenshots are from GNOME but most GUI desktops are similar.
    [![File manager showing all files boot files in directory from tarball selected](13-select-all-boot-files-in-tarball-directory.png)](13-select-all-boot-files-in-tarball-directory.png)
 
 6. Cut and paste the files into the top-level (root).
-   [![File manager showing the boot files moved into the top level of the boot partition](14-cut-and-paste-the-boot-files-into-the-root-of-the-boot-partition.png)](14-cut-and-past-the-boot-files-into-the-root-of-the-boot-parition.png)
+   [![File manager showing the boot files moved into the top level of the boot partition](14-cut-and-paste-the-boot-files-into-the-root-of-the-boot-partition.png)](14-cut-and-paste-the-boot-files-into-the-root-of-the-boot-parition.png)
 
 7. Remove the now extraneous extraction directory (which should be empty).
    [![File manager showing result of removing the now extraneous extraction directory](15-remove-the-extraneous-extraction-directory.png)](15-remove-the-extraneous-extraction-directory.png)
