@@ -38,11 +38,15 @@ If you followed [Installation on Raspberry Pi](../../install-on-raspberry-pi/_in
 
 ##### Copy boot files to the boot partition
 
-TBD
+Sample session when `/devsdb` has been identified as the boot USB stick (or `/dev/sr0` for cdrom) and `/dev/sda` is your target disk formatted as discussed.
+
+```shell
+setup-bootable /dev/sdb1 /dev/sda1
+```
 
 ##### Configure boot loader
 
-TBD
+See [hardware specific tweaks & configuration](../kernel-and-hardware-notes/hardware-specific-tweaks-configs.md).
 
 ##### Reboot
 
@@ -199,3 +203,9 @@ Remove partitioning tools
 -------------------------
 
 In the interests of saving space on the system during normal use and reducing chances of human error, remove `parted` if you used that for partitioning.
+
+
+
+```shell
+apk del parted
+```

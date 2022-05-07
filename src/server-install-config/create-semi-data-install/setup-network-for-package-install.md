@@ -17,7 +17,7 @@ series: ["docs4web","alpine-linux-local-server"]
 
 ## Use Alpine Linux setup sub-script get setup network time
 
-* Execute `setup-ntp` # If you don't setup NTP the time may be too different from internet hosts, resulting in failure attempting to use HTTPS, below.
+* Execute `setup-ntp` # If you don't setup NTP the time may be differ too much from internet hosts, resulting in failure attempting to use HTTPS, below.
 
 ## Use Alpine Linux setup sub-script to enable package repos
 

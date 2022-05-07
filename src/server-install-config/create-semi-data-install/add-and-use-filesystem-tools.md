@@ -15,15 +15,23 @@ You need to add the tools that will let you format/create one or more additional
 
 A new flash file system for Linux; recommended for any flash (SD card, USB, etc)
 
-```shell
-apk add f2fs-tools
-```
+* Install filesystem tools
+
+  ``` shell
+  apk add f2fs-tools
+  ```
+
+* Create filesystem (sample session)
+
+  ``` shell
+  mkfs.f2fs /dev/sda3
+  ```
 
 ## Ext2/Ext4
 
 A venerable Linux filesystem. Well supported (on non-UEFI x86/x86-64 systems one can boot from ext4 if one uses `extlinux` or `grub2` instead of `syslinux`)
 
-```shell
+``` shell
 apk add e2fsprogs
 ```
 
@@ -31,15 +39,25 @@ apk add e2fsprogs
 
 The old standby from MS-DOS days and still used (as FAT32/ESP) for UEFI that is also used by many ARM bootloaders, including the one on the Raspberry Pi.
 
-```shell
-apk add dosfstools
-```
+
+
+* Install package
+
+  ```shell
+  apk add dosfstools
+  ```
+
+* Create filesystem (sample session)
+
+  ``` shell
+  mkfs.vfat -F 32 /dev/sda1
+  ```
 
 ## LVM
 
 For resizeable volumes, RAID, and more; is not a filesystem itself
 
-```shell
+``` shell
 apk add lvm2
 ```
 
@@ -47,7 +65,7 @@ apk add lvm2
 
 Can be used in place of LVM+ext4 or even RAID+LVM+ext4.
 
-```shell
+``` shell
 apk add btrfs-progs
 ```
 
@@ -55,7 +73,7 @@ apk add btrfs-progs
 
 Can be used in place of LVM+ext4 or even RAID+LVM+ext4.
 
-```shell
+``` shell
 apk add zfs
 ```
 
@@ -63,7 +81,7 @@ apk add zfs
 
 Traditional Linux software RAID.
 
-```shell
+``` shell
 apk add mdadm
 ```
 

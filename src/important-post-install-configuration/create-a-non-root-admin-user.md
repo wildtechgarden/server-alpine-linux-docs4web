@@ -43,7 +43,7 @@ Login as new user and test access
 2. Execute `doas ls -al /root`
 3. You should see the directory listing for `/root` which is owned and readable only by the `root` user.
 
-## Don't forgot to commit your changes
+## Don't forget to commit your changes
 
 Otherwise they will be lost on reboot.
 
