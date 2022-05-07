@@ -9,7 +9,7 @@ series: ["docs4web","alpine-linux-local-server"]
 
 ## Overview
 
-These are not part of the base install, but either can be essential to system function (like adding boot entropy for some headless systems like the Raspberry Pi) or are widely accepted best practices (like creating a non-root admin user and limiting time spent as root).
+The following are not part of the base install, but either can be essential to system function (like adding boot entropy for some headless systems like the Raspberry Pi) or are widely accepted best practices (like creating a non-root admin user and limiting time spent as root).
 
 ## Configuration
 

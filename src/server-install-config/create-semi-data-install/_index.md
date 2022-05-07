@@ -38,24 +38,25 @@ If you followed [Installation on Raspberry Pi](../../install-on-raspberry-pi/_in
 
 ##### Copy boot files to the boot partition
 
-Sample session when `/devsdb` has been identified as the boot USB stick (or `/dev/sr0` for cdrom) and `/dev/sda` is your target disk formatted as discussed.
+Sample session when `/devsdb` has been identified as the boot USB stick (or `/dev/sr0` for CD-ROM) and `/dev/sda` is your target disk formatted as discussed.
 
 ```shell
 setup-bootable /dev/sdb1 /dev/sda1
 ```
 
-##### Configure boot loader
+##### Configure boot loader (extras)
 
-See [hardware specific tweaks & configuration](../kernel-and-hardware-notes/hardware-specific-tweaks-configs.md).
+See [hardware specific tweaks & configuration](../../kernel-and-hardware-notes/guides-for-setting-kernel-parameters.md).
 
 ##### Reboot
 
 * You may need to update your system's configuration (e.g. BIOS setup) to boot from the new boot partition before Alpine will start up on the new system.
-* It may also help to remove the installation media once the system has started to reset during reboot.
 
-```shell
-reboot
-```
+* It may also help to remove the installation media once the system has started to reset during reboot.
+  
+  ```shell
+  reboot
+  ```
 
 The rest of this guide is now in sync regardless of whether you are starting with a Pi (or other ARM) install, or an x86_64/x86 system.
 
@@ -67,7 +68,7 @@ The rest of this guide is now in sync regardless of whether you are starting wit
 
 * Useful if your media has limited write cycles even if much more than USB/SD flash (e.g. SSD, NVMe, etc)
 
-* This is this author's recommended filesystem for the 'config' partition regardless of storage type.
+* This is this author's recommended filesystem for the 'config' partition regardless of storage type for the Raspberry Pi (with x86_64 it is unfortunately not included in the stock initial boot disk — initramfs — and therefore we can't depend on it during boot).
 
 * This filesystem has no 2 GB file size limit but it's still not a good sign if your overlays are getting that large (for 'semi-data' install)
 
@@ -75,7 +76,7 @@ The rest of this guide is now in sync regardless of whether you are starting wit
 
 ##### Using ext4
 
-* Same notes as f2fs except that f2fs is the preferred choice
+* Same notes as f2fs except that f2fs is the preferred choice on the Pi (ext4 is preferred on x86_64)
 
 ##### Using FAT 32
 
@@ -88,6 +89,7 @@ The rest of this guide is now in sync regardless of whether you are starting wit
 
 * You need to add at least one package, which means doing some network setup. Then you can create the filesystem.
 * [Setup network required for installation of needed packages](setup-network-for-package-install.md)
+* Add additional partitions. Like [creating boot partitions](../../linux-cli-partitioning/_index.md) except that we don't create a new partition table, we just add additional partitions.
 * [Add and use filesystem tools to create your choice of filesystem](add-and-use-filesystem-tools.md)
 * `mkdir /media/name-of-partition` and add mount to `/etc/fstab`
 * **IMPORTANT**: `mount -a` and then `mount` to verify that the config partition is in fact mounted. If you don't mount the partition, `setup-alpine` won't 'see' it as available.
@@ -95,15 +97,26 @@ The rest of this guide is now in sync regardless of whether you are starting wit
 ### Possibly add a swap partition
 
 * On appropriate media (e.g. not SD card or flash; better is to use an external drive if one must use swap and the base OS is on SD or flash)
+
 * Create a partition to hold the swap
-* mkswap
-* add to fstab
+
+* `mkswap /dev/device-with-swap`
+
+* add to `fstab`
+  
+   * For example, if `/dev/device-with-swap` was `/dev/mmcblk0p3` we would add:
+     
+     ```fstab
+     /dev/mmcblk0p3 swap swap swap 0 0
+     ```
+  
+   * Execute `swapon -a`    
 
 ### All other partitions
 
 #### Options
 
-##### For large non-flash storage use LVM and ext4
+##### For large non-flash storage use LVM and ext4 or on x86_64 always
 
 * This makes resizing partitions at least possible, with a filesystem (ext4) that is well-supported by Alpine
 * Instead of LVM+ext4 one could use btrfs or zfs, or LVM+some other filesystem, but this is out of scope and less supported.
@@ -203,8 +216,6 @@ Remove partitioning tools
 -------------------------
 
 In the interests of saving space on the system during normal use and reducing chances of human error, remove `parted` if you used that for partitioning.
-
-
 
 ```shell
 apk del parted

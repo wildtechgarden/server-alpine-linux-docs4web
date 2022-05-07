@@ -22,18 +22,17 @@ To commit, execute the following as your non-root admin user (if you installed `
 
     doas lbu commit
 
-Some recommended first steps
+Some author preferences for interface / user tweaks
 ----------------------------
-
-1. [Configure automatic off-system backups](configure-off-system-backups.md)
-
-Some author preferences
------------------------
-
-### Interface / user tweaks
-
-You may wish to implement some of these before completing 'system-related' preferences
 
 1. [Enable colourful and enhanced shell prompt](enable-colourful-shell-prompt.md)
 2. [Add tmux](add-tmux.md)
 3. [Edit message of the day (MOTD)](edit-motd.md)
+
+## Main recommendation
+
+[Configure automatic off-system backups](configure-off-system-backups.md)
+
+## See also various HowTo documents
+
+There are [a variety of howto guides in this repo](../howts/_index.md) which you may wish to consider as well.
