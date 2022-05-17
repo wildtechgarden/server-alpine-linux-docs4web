@@ -3,6 +3,8 @@ date: 2022-04-29
 title: Alpine Linux as a Server
 tags: ["alpine","configuration","docs","hosting","linux","self-host","sysadmin-devops","raspberry-pi","sbc"]
 series: ["docs4web","alpine-linux-local-server"]
+toc: true
+featuredImageAlt: "Illustration of a titan (Prometheus) dominating a vast mountainous landscape"
 ---
 
 # Alpine Linux as a server
@@ -28,6 +30,10 @@ In addition, these documents try to keep things DRY (don't repeat yourself) in o
 [Kernel and hardware notes](kernel-and-hardware-notes/_index.md)
 
 [HowTos](howtos/_index.md)
+
+----
+
+Credit for cover illustration of a titan (Prometheus) dominating a vast mountainous landscape: [Artie Navarre](https://pixabay.com/users/artie_navarre-66276/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5451603) from [Pixabay](https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5451603).
 
 --------
 
