@@ -35,4 +35,4 @@ Some author preferences for interface / user tweaks
 
 ## See also various HowTo documents
 
-There are [a variety of howto guides in this repo](../howts/_index.md) which you may wish to consider as well.
+There are [a variety of howto guides in this repo](../howtos/_index.md) which you may wish to consider as well.

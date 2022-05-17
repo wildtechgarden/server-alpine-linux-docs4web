@@ -19,7 +19,7 @@ In addition, these documents try to keep things DRY (don't repeat yourself) in o
 
 [Install and configure base server (x86-64, Pi, and x86)](server-install-config/_index.md)
 
-[Do important post-install configuration](important-post-install-configuration.md)
+[Do important post-install configuration](important-post-install-configuration/_index.md)
 
 [Add recommended tweaks and configuration](recommended-tweaks-and-configs/_index.md)
 
