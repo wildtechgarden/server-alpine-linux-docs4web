@@ -5,6 +5,9 @@ tags: ["alpine","configuration","docs","hosting","linux","self-host","sysadmin-d
 series: ["docs4web","alpine-linux-local-server"]
 toc: true
 featuredImageAlt: "Illustration of a titan (Prometheus) dominating a vast mountainous landscape"
+description: "Daniel's documentation for using Alpine Linux for local servers on x86-64 and Raspberry Pi family"
+summary: "Daniel's documentation for using Alpine Linux for local 
+servers on x86-64 and Raspberry Pi family. These documents use only the 'main' repository, except in one or more [optional HowTo guides](howtos/_index.md)."
 ---
 
 # Alpine Linux as a server
