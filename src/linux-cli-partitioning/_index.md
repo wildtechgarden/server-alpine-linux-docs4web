@@ -109,5 +109,5 @@ TBD
 
 Also requires adding a package, but can be automated more easily than parted or fdisk.
 
-* [Setup network required for installation of needed packages](setup-network-for-package-install.md)
+* [Setup network required for installation of needed packages](../server-install-config/create-semi-data-install/setup-network-for-package-install.md)
 * TBD
