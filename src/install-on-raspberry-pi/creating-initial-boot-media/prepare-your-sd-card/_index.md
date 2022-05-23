@@ -33,7 +33,7 @@ TBD
 
 [Partitioning on the Linux command line](../../../linux-cli-partitioning/_index.md)
 
-[Creating a filesystem on the Linux command line](../../../server-install-config/create-semi-data-install/add-and-use-filesystem-tools.md#vfat-fat32-fat16)
+[Creating a filesystem on the Linux command line](../../../server-install-config/create-semi-data-install/add-and-use-filesystem-tools.md#vfatfat32fat16)
 
 ### On Mac OS
 
