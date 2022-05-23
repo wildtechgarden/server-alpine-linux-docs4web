@@ -16,7 +16,7 @@ series: ["docs4web","alpine-linux-local-server"]
 
 Easiest of the command line options, but requires adding a package on Alpine and others (some distros include parted by default, others do not).
 
-* [Setup network required for installation of needed packages](setup-network-for-package-install.md)
+* [Setup network required for installation of needed packages](../server-install-config/create-semi-data-install/setup-network-for-package-install.md)
 
 * Install the partitioner and a tool to help identify the correct device to use
   
