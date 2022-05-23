@@ -34,12 +34,24 @@ In addition, these documents try to keep things DRY (don't repeat yourself) in o
 
 [HowTos](howtos/_index.md)
 
+--------
+
+## Contributing
+
+You can 'git clone' [the source code for this documentation](https://gitlab.com/danielfdickinson/server-alpine-linux-docs4web) and submit a pull request if you wish to contribute changes.
+
+You can also [browse or create and issue on GitLab](https://gitlab.com/danielfdickinson/server-alpine-linux-docs4web/-/issues) if you've noticed and error or area to improve, or have a related request.
+
 ----
 
-Credit for cover illustration of a titan (Prometheus) dominating a vast mountainous landscape: [Artie Navarre](https://pixabay.com/users/artie_navarre-66276/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5451603) from [Pixabay](https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5451603).
+## Cover photo credits
+
+For the [version on Daniel F. Dickinson's technical / professional website (the Wild Tech "Garden")](https://www.wildtechgarden.ca/deploy-admin/server-alpine-linux-docs4web/) we should mention: Credit for cover illustration of a titan (Prometheus) dominating a vast mountainous landscape: [Artie Navarre](https://pixabay.com/users/artie_navarre-66276/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5451603) from [Pixabay](https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5451603).
 
 --------
 
+## Copyright and license
+
 Copyright © 2022 Daniel F. Dickinson
 
-Licensed under the Creative Commons Attribution Share-Alike 4.0 International license.
+Licensed under the Creative Commons Attribution Share-Alike 4.0 International license. See [LICENSE](https://gitlab.com/danielfdickinson/server-alpine-linux-docs4web/-/blob/main/LICENSE) for details.
