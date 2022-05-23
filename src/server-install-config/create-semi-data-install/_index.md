@@ -176,7 +176,7 @@ It is only useful to do this for packages that need to preserve data for use acr
 
 Assuming you have used the default NTP client (`chronyd`):
 
-The directory to preserve is `/var/lib/crhony`. One could create `/media/mmcblk0p2/data/var/lib/chrony` and have an `fstab` with
+The directory to preserve is `/var/lib/chrony`. One could create `/media/mmcblk0p2/data/var/lib/chrony` and have an `fstab` with
 
 ```shell
 /media/mmcblk0p2/data/var/lib/chrony /var/lib/chrony none bind,rw 0 0

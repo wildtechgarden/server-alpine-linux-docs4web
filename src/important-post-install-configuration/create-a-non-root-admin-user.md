@@ -53,4 +53,4 @@ doas lbu commit
 
 ## Useful links
 
-<https://wiki.alpinelinux.org/wiki/Setting_up_a_new_user>>
+<https://wiki.alpinelinux.org/wiki/Setting_up_a_new_user>

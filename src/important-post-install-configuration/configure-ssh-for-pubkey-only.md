@@ -55,7 +55,7 @@ Edit `/etc/ssh/sshd_config` and change `PasswordAuthencation` and `KbdInteractiv
 
 ```shell
 PasswordAuthentication no
-KbdInteractiveInteractiveAuthentication no
+KbdInteractiveAuthentication no
 ```
 
 Test config to verify it is not broken
