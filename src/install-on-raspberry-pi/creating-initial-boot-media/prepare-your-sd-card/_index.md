@@ -33,6 +33,8 @@ TBD
 
 [Partitioning on the Linux command line](../../../linux-cli-partitioning/_index.md)
 
+[Creating a filesystem on the Linux command line](../../../server-install-config/create-semi-data-install/add-and-use-filesystem-tools.md#vfat-fat32-fat16)
+
 ### On Mac OS
 
 TBD
@@ -54,7 +56,7 @@ TBD
 Assuming you have mounted your new boot partition on `/mnt` you can (as root) do:
 
 ```shell
-tar -C /mnt --strip 1 -xzf /path/to/install-tarball.tar.gz # FIXME: Verify --strip 1 is needed with the CLI
+tar -C /mnt --strip 1 -xzf /path/to/install-tarball.tar.gz
 ```
 
 ### On Mac OS
