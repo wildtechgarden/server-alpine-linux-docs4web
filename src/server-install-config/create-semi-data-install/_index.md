@@ -15,8 +15,7 @@ This configuration is like diskless mode except that `home`, parts of `/var`, an
 
 **Note** that with diskless, data, and our hybrid install, `lbu commit` only stores changes that are used after the 'boot' runlevel completes and cannot modify the 'boot' or 'sysinit' runlevels. While there are ways (if using a writable boot medium) to make modification in those early stages, doing so is out of scope for this documentation.
 
-Organize and configure storage on the system
-------------------------------
+## Organize and configure storage on the system
 
 We don't cover using encrypted storage; explaining the details is out of scope.
 
@@ -53,7 +52,7 @@ See [hardware specific tweaks & configuration](../../kernel-and-hardware-notes/g
 * You may need to update your system's configuration (e.g. BIOS setup) to boot from the new boot partition before Alpine will start up on the new system.
 
 * It may also help to remove the installation media once the system has started to reset during reboot.
-  
+
   ```shell
   reboot
   ```
@@ -103,14 +102,14 @@ The rest of this guide is now in sync regardless of whether you are starting wit
 * `mkswap /dev/device-with-swap`
 
 * add to `fstab`
-  
+
    * For example, if `/dev/device-with-swap` was `/dev/mmcblk0p3` we would add:
-     
+
      ```fstab
      /dev/mmcblk0p3 swap swap swap 0 0
      ```
-  
-   * Execute `swapon -a`    
+
+   * Execute `swapon -a`
 
 ### All other partitions
 
@@ -149,7 +148,7 @@ Example with 'config' mounted on `/media/mmcblk0p2`
 2. `mkdir -p /media/mmcblk0p2/data/home`
 
 3. Edit `/etc/fstab` to add
-   
+
    ```shell
    /media/mmcblk0p2/data/home /home none bind,rw 0 0
    ```
@@ -212,8 +211,7 @@ If you want a separate `/var/log`, you should create a volume on non-flash stora
 
 However, before doing `mount` you probably want to move the current `/var/log` contents to the new location (by temporarily mounting the new location on `/mnt`, halting any logging processes, doing `mv /var/log/* /mnt/`, and `umount /mnt`).
 
-Remove partitioning tools
--------------------------
+## Remove partitioning tools
 
 In the interests of saving space on the system during normal use and reducing chances of human error, remove `parted` if you used that for partitioning.
 

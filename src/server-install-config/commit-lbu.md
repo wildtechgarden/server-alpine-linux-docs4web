@@ -7,14 +7,14 @@ series: ["docs4web","alpine-linux-local-server"]
 
 # Commit LBU
 
-Overview
---------
+## Overview
 
 Once you are sure everything is correct for the initial boot into your configured system, commit your changes
 
-Do the commit (unencrypted)
----------------------------
+## Do the commit (unencrypted)
 
 For the initial commit and reboot, use an unencrypted LBU (to make sure everything works).
 
-    lbu commit
+``` shell
+lbu commit
+```

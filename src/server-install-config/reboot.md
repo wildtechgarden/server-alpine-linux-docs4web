@@ -8,4 +8,6 @@ series: ["docs4web","alpine-linux-local-server"]
 
 ## The Moment of Truth
 
-    reboot
+``` shell
+reboot
+```

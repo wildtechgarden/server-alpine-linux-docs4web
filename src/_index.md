@@ -20,7 +20,7 @@ In addition, these documents try to keep things DRY (don't repeat yourself) in o
 
 ## Installation & configuration notes
 
-[Install as a server on a Raspberry Pi](install-on-raspberry-pi/_index.md) 
+[Install as a server on a Raspberry Pi](install-on-raspberry-pi/_index.md)
 
 [Install and configure base server (x86-64, Pi, and x86)](server-install-config/_index.md)
 
@@ -42,7 +42,7 @@ You can 'git clone' [the source code for this documentation](https://gitlab.com/
 
 You can also [browse or create and issue on GitLab](https://gitlab.com/danielfdickinson/server-alpine-linux-docs4web/-/issues) if you've noticed and error or area to improve, or have a related request.
 
-----
+--------
 
 ## Cover photo credits
 

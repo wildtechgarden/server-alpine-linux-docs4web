@@ -11,7 +11,6 @@ series: ["docs4web","alpine-linux-local-server"]
 
 Uh-oh. The reboot after initial setup didn't work. Now what?
 
-Problems and solutions
-----------------------
+## Problems and solutions
 
 TBD

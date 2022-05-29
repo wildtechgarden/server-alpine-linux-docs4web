@@ -13,17 +13,17 @@ Assuming the reboot was successful, it is time to make your system more useful.
 
 Otherwise see [Firstboot troubleshooting](../server-install-config/firstboot-troubleshooting.md)
 
-Commit changes at your preferred granularity
---------------------------------------------
+## Commit changes at your preferred granularity
 
-Don't forget that these changes will not survive reboot unless you commit your changes. I like to 'commit early, commit often', but you may wish to commit less frequently. 
+Don't forget that these changes will not survive reboot unless you commit your changes. I like to 'commit early, commit often', but you may wish to commit less frequently.
 
 To commit, execute the following as your non-root admin user (if you installed `sudo` rather than `doas`, use `sudo` where we write `doas`) after completing some configuration:
 
-    doas lbu commit
+``` shell
+doas lbu commit
+```
 
-Some author preferences for interface / user tweaks
-----------------------------
+## Some author preferences for interface / user tweaks
 
 1. [Enable colourful and enhanced shell prompt](enable-colourful-shell-prompt.md)
 2. [Add tmux](add-tmux.md)

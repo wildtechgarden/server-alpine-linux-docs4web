@@ -11,12 +11,13 @@ series: ["docs4web","alpine-linux-local-server"]
 
 Tmux is a handle tool that gives the ability to have multiple (text) windows in a single terminal session. In addition, if you get disconnected from the terminal (e.g. an SSH session drops out), when you log back in, you can attach back to the same session. This is particularly handy when you issue command that takes longer to complete than expected.
 
-[Tmux does much more than this, and you probably ought to read about it]((https://github.com/tmux/tmux/wiki).
+[Tmux does much more than this, and you probably ought to read about it](https://github.com/tmux/tmux/wiki).
 
-Install
--------
+## Install
 
-    doas apk add tmux
+``` shell
+doas apk add tmux
+```
 
 Commit your changes
 

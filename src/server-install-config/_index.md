@@ -17,8 +17,7 @@ Also not documented here is fully 'automated' installation and configuration; th
 
 Finally, these guides would also work for systems in which one uses a flash device for the OS and OS data (e.g. a system running from a USB flash drive).
 
-Guides
-------
+## Guides
 
 1. [Obtain and verify the install media](../verify-downloaded-install-media/_index.md)
 2. [Write the install image to bootable storage for x86_64/x86 (Alpine Linux wiki)](https://wiki.alpinelinux.org/wiki/Installation#Flashing_.28direct_data_writing.29_the_installation_image-file_onto_a_device_or_media) or [write the install tarball to your boot disk (e.g. SD card) for the Raspberry Pi](../install-on-raspberry-pi/creating-initial-boot-media/_index.md)
@@ -35,7 +34,6 @@ Guides
 
 [Recommended tweaks and configuration](../recommended-tweaks-and-configs/_index.md)
 
-Troubleshooting
----------------
+## Troubleshooting
 
 * [First boot troubleshooting](firstboot-troubleshooting.md)

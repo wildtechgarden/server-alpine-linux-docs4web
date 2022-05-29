@@ -9,4 +9,4 @@ series: ["docs4web","alpine-linux-local-server"]
 
 [Guides for setting kernel parameters](guides-for-setting-kernel-parameters.md)
 
-[Hardware-specific tweaks and configuration](hardware-specific-tweaks-configs.md) 
+[Hardware-specific tweaks and configuration](hardware-specific-tweaks-configs.md)

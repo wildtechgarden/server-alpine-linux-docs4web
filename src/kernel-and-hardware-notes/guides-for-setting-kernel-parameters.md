@@ -7,18 +7,15 @@ series: ["docs4web","alpine-linux-local-server"]
 
 # Guides for setting kernel parameters
 
-Overview
---------
+## Overview
 
 These vary with architecture and specific device
 
-Linux kernel guide to its parameters
-------------------------------------
+## Linux kernel guide to its parameters
 
 <https://www.kernel.org/doc/html/latest/admin-guide/kernel-parameters.html>
 
-A suggested tweak
------------------
+## A suggested tweak
 
 Adding `consoleblank=300` can be a nice addition to the kernel commandline. It blanks a text console if left idle for over 300 seconds (5 minutes). In same cases that will allow a monitor to do some power saving (although it is not display 'sleep' mode).
 
@@ -40,8 +37,7 @@ mount -o remount,ro /media/mmcblk0p1
 
 **NOTE**: It is recommended that you do **not** make this partition read-write under normal conditions. This avoids accidental writes which could render your system unbootable.
 
-Systems using Syslinux for bootloader
--------------------------------------
+## Systems using Syslinux for bootloader
 
 **WARNING:** Changing the kernel commandline or boot configuration can render your system unbootable, depending on the parameters you change.
 
@@ -53,8 +49,7 @@ The default x86-64 commandline in `syslinux.cfg`:
 APPEND modules=loop,squashfs,sd-mod,usb-storage quiet
 ```
 
-Systems using GRUB for bootloader
----------------------------------
+## Systems using GRUB for bootloader
 
 **WARNING:** Changing the kernel commandline or boot configuration can render your system unbootable, depending on the parameters you change.
 
@@ -66,13 +61,11 @@ The default x86-64 commandline in `grub.cfg`:
 linux    /boot/vmlinuz-lts modules=loop,squashfs,sd-mod,usb-storage quiet
 ```
 
-Systems using U-boot
---------------------
+## Systems using U-boot
 
 TBD
 
-Raspberry Pi
-------------
+## Raspberry Pi
 
 ### Kernel parameter setting (boot time)
 

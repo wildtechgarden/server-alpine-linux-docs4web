@@ -11,8 +11,7 @@ series: ["docs4web","alpine-linux-local-server"]
 
 This guide uses only tools included in the base configuration of Alpine Linux. It is only suitable for cases where your backups are small, or you have a very reliable network connection. If either of those is not the case you will need to look into `restic`, `borg` or other encrypted network backup tools.
 
-Case 1: Encrypted tarball via SSH
--------------------------------------------
+## Case 1: Encrypted tarball via SSH
 
 ### Option 1: Pushed to some server
 

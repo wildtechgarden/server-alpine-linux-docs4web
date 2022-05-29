@@ -7,8 +7,7 @@ series: ["docs4web","alpine-linux-local-server"]
 
 # Obtain and verify install tarball
 
-Obtain the official Alpine Linux image
---------------------------------------
+## Obtain the official Alpine Linux image
 
 Choose tarball to download based on the model of Pi you have
 

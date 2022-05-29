@@ -11,8 +11,7 @@ series: ["docs4web","alpine-linux-local-server"]
 
 TBD
 
-On Linux
---------
+## On Linux
 
 ### GUI (GNOME)
 

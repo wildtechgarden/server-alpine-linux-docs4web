@@ -7,8 +7,7 @@ series: ["docs4web","alpine-linux-local-server"]
 
 # Creating initial boot media
 
-Create the initial boot image
---------
+## Create the initial boot image
 
 1. [Obtain and verify install tarball](obtain-and-verify-install-tarball.md)
 2. [Prepare your SD card](prepare-your-sd-card/_index.md)

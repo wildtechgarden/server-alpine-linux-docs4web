@@ -18,7 +18,7 @@ Encrypting the config and APK partition is not supported by default by Alpine Li
 ## Configure lbu.conf
 
 1. Modify `/etc/lbu/lbu.conf` to look something like:
-   
+
    ```shell
    # What cipher to use with -e option
    DEFAULT_CIPHER=aes-256-cbc
@@ -36,14 +36,14 @@ Encrypting the config and APK partition is not supported by default by Alpine Li
    
    BACKUP_LIMIT=128
    ```
-   
+
    We enable encryption and a history of up to 128 ``lbu commit`` actions. While this may seem like overkill, I personally 'commit early, commit often' and want to be able to restore to a working config if a break something. In addition the history should not take up that much space, since if you have a large LBU, you are probably 'doing it wrong' for the procedure described in this documentation.
 
-2. Move your previous backup out of the way (unless you know you won't want it back; 
+2. Move your previous backup out of the way (unless you know you won't want it back;
    you should store is somewhere protected though, as it is unecrypted).
 
 3. Commit your changes and remove the unecrypted overlay volume (LBU file) if you haven't decided to preserve it somewhere protected.
-   
+
    ```shell
    doas lbu commit -d
    ```
@@ -51,9 +51,9 @@ Encrypting the config and APK partition is not supported by default by Alpine Li
 4. You will be prompted to enter your passphrase twice. Do so.
 
 5. In normal use you would just
-   
+
    ```shell
    doas lbu commit
    ```
-   
-   And enter you passphrase, twice. 
+
+   And enter you passphrase, twice.

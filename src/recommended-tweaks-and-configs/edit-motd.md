@@ -19,20 +19,20 @@ You may change this message by editing /etc/motd.
 
 Which is potentially confusing, and is annoying in any event, once you have set up your system. Fortunately changing it is easy.
 
-Configure '/etc/motd'
----------------------------------------
+## Configure '/etc/motd'
 
 Simply execute:
 
-    doas vi /etc/motd
+``` shell
+doas vi /etc/motd
+```
 
 Edit or replace the plaintext message here, save, and exit.
 
-Commit your changes
--------------------
+## Commit your changes
 
 If you have been following along and applying this guide's recommendations:
 
-```shell
+``` shell
 doas lbu commit
 ```

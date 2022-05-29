@@ -8,13 +8,14 @@ draft: true
 
 # Install and configure restic/rest-server
 
-    apk add rest-server \
-     rest-server-doc # Optional
+``` shell
+apk add rest-server \
+  rest-server-doc # Optional
+```
 
-Set command line params via ``/etc/conf.d/rest-server``
+## Set command line params via `/etc/conf.d/rest-server`
 
-See docs at ``/usr/share/doc/rest-server/README.md``
-
+See docs at `/usr/share/doc/rest-server/README.md`  
 or from the rest-server github repo: <https://github.com/restic/rest-server>.
 
 ```shell
@@ -31,19 +32,19 @@ REST_GROUP=rest-server
 
 And configure `REST_SERVER_PATH` and any additional options (`REST_SERVER_OPTS`)
 
-### Enable on start up
+## Enable on start up
 
 ```shell
 rc-update add rest-server 
 ```
 
-Start it immediately
+## Start it immediately
 
 ```shell
 service rest-server start
 ```
 
-To manage the ``htpasswd`` file use ``apache2-utils``
+# To manage the `htpasswd` file use `apache2-utils`
 
 ```shell
 apk add apache2-utils

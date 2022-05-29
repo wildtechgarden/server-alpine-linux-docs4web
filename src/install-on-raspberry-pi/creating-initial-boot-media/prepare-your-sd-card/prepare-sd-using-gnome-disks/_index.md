@@ -7,12 +7,10 @@ series: ["docs4web","alpine-linux-local-server"]
 
 # Prepare SD card using GNOME Disks
 
-
-
 ## Procedure
 
 1. Start with an empty (unpartitioned, unformatted) SD card. If you disk is not empty, you will need to do a search on how to clean the disk and create an `msdos` disklabel (aka partition table).
-   
+
    [![Gnome Disks showing an empty, unpartitioned SD card](01-gnome-disks-empty-sd-card.png)](01-gnome-disks-empty-sd-card.png)
 
 2. Add boot partition

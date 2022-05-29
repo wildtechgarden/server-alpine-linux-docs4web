@@ -11,8 +11,7 @@ series: ["docs4web","alpine-linux-local-server"]
 
 You'll want to be careful during the LBU configuration and APK cache configuration sections using the default ``setup-alpine`` script. You also need to have pre-mounted the partition(s) that will hold the LBU and APK cache (see [Create semi-data/semi-diskless install](create-semi-data-install/#add-a-config-partition)).
 
-Use 'setup-alpine', cautiously
-----------------------------
+## Use 'setup-alpine', cautiously
 
 Some steps (like setting up the network) will have the answers you previously gave. This can save typing if you want to keep the same answer, but if you wish to change your answers, you can.
 

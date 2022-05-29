@@ -13,17 +13,17 @@ For many users ``vi`` (the default editor for Alpine) is difficult and confusing
 
 As usual, commands below are to be executed as root.
 
-Install nano
-------------
+## Install nano
 
-    apk add nano
+``` shell
+apk add nano
+```
 
-Add a profile snippet to make nano the default editor
------------------------------------------------------
+## Add a profile snippet to make nano the default editor
 
 This change will apply to 'sh' (ask/bash/dash/etc) shells that are login shells, or sub-shells of a login shell. That means you will need to logout and log back in to see the effects of enabling this (or conversely disabling it).
 
-Create ``/etc/profile.d/default_editor.sh`` with the following contents:
+Create `/etc/profile.d/default_editor.sh` with the following contents:
 
 ```shell
 EDITOR=nano
