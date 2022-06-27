@@ -20,13 +20,13 @@ You should obtain the appropriate install media as well as sha256 and GnuPG sign
 
 Just a matching check (i.e. correct download contents)
 
-#### Linux
+#### Linux (SHA256)
 
 ```shell
 sha256sum -c install-media-name.sha256
 ```
 
-#### Mac OS
+#### Mac OS (SHA256)
 
 _Untested_ due to lack of Mac on which to test. Would a search engine lie to me?
 
@@ -46,15 +46,15 @@ Also can verify authenticity, to a degree
 
 #### Make sure GnuPG (gpg command) is installed
 
-##### Linux
+##### Linux (GnuPG)
 
 We assume you have GnuPG installed (Usual for desktop and many server distributions, but not Alpine unless you add it, but then a simple `apk add ggp` is sufficient).
 
-##### Mac OS
+##### Mac OS (GnuPG)
 
 You will need to install GnuPG first. See [GnuPG - Download](https://www.gnupg.org/download/) and pick a Windows version. You could also use Homebrew or other add-on package managers for Mac OS.
 
-##### Windows
+##### Windows (GnuPG)
 
 You will need to install GnuPG first. See [GnuPG - Download](https://www.gnupg.org/download/) and pick a Windows version. You could also use a package manager for Windows such as Chocolatey or Scoop.
 

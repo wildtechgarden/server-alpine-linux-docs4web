@@ -17,13 +17,13 @@ This configuration is like diskless mode except that `home`, parts of `/var`, an
 
 ## Organize and configure storage on the system
 
-We don't cover using encrypted storage; explaining the details is out of scope.
+We don't cover using encrypted storage here, yet. In the meantime, if you want to try adding it yourself, install the `dmcrypt` package and configure appropriately. There are some 'gotchas' with checking and mounting filesystems due not being able to modify the 'boot' or 'sysinit' runlevels that require using advanced features of OpenRC to manage the initscripts.
 
 ### Create a 'diskless' install as base and boot into it
 
 #### For Raspberry Pi systems
 
-If you followed [Installation on Raspberry Pi](../../install-on-raspberry-pi/_index.md) the diskless part is already the default, so skip to [add a config partition](#add-a-config-partition).
+If you followed [Installation on Raspberry Pi](../../install-on-raspberry-pi/_index.md) the diskless part is already the default, so skip to [add a config partition](#add-a-and39configand39-partition).
 
 #### For x86_64 or x86 systems
 
@@ -37,7 +37,7 @@ If you followed [Installation on Raspberry Pi](../../install-on-raspberry-pi/_in
 
 ##### Copy boot files to the boot partition
 
-Sample session when `/devsdb` has been identified as the boot USB stick (or `/dev/sr0` for CD-ROM) and `/dev/sda` is your target disk formatted as discussed.
+Sample session when `/dev/sdb` has been identified as the boot USB stick (or `/dev/sr0` for CD-ROM) and `/dev/sda` is your target disk formatted as discussed.
 
 ```shell
 setup-bootable /dev/sdb1 /dev/sda1

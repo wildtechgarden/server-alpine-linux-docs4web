@@ -17,4 +17,4 @@ The following are not part of the base install, but either can be essential to s
 2. [Create a non-root admin user](create-a-non-root-admin-user.md)
 3. [Configure SSH for non-root public key access only](configure-ssh-for-pubkey-only.md)
 4. [Add packages for pre-mount filesystem checks](add-packages-for-pre-mount-filesystem-check.md)
-5. [Use encrypted LBU](use-encrypted-lbu.md)
+5. [Use encrypted LBU (not applicable to 'sys' installs)](use-encrypted-lbu.md)

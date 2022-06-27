@@ -56,7 +56,7 @@ TBD
 Assuming you have mounted your new boot partition on `/mnt` you can (as root) do:
 
 ```shell
-tar -C /mnt --strip 1 -xzf /path/to/install-tarball.tar.gz
+tar -C /mnt -xzf /path/to/install-tarball.tar.gz
 ```
 
 ### On Mac OS
