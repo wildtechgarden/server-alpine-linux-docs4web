@@ -34,5 +34,5 @@ series: ["docs4web","alpine-linux-local-server"]
 ## Advantages of configurations described in this collection
 
 * For the semi-diskless/semi-data installation you get the benefits of both diskless and data installs.
-  * You also get a more complete and consistent guide than the wiki (although eventual goal is to update the wiki with the info, so this is a temporary benefit to this collection).
+   * You also get a more complete and consistent guide than the wiki (although eventual goal is to update the wiki with the info, so this is a temporary benefit to this collection).
 * For the custom system disk installation, you get a more complete / full featured installation in one set of guides instead of piecing together various documents (this is also a temporary benefit).
