@@ -1,5 +1,7 @@
 ---
 config:
+    MD003:
+        style: "atx"
     MD007:
         indent: 3
     MD013:
@@ -9,10 +11,11 @@ config:
         code_blocks: false
         tables: false
     MD024: false
-    MD025: false
+    MD025:
+        front_matter_title:
     MD046:
         style: fenced
 globs:
     - README.md
-    - '**/*.md'
-
+    - 'src/*.md'
+    - 'src/**/*.md'
