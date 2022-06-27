@@ -44,7 +44,7 @@ rc-update add rest-server
 service rest-server start
 ```
 
-# To manage the `htpasswd` file use `apache2-utils`
+## To manage the `htpasswd` file use `apache2-utils`
 
 ```shell
 apk add apache2-utils
