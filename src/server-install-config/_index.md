@@ -26,7 +26,7 @@ Finally, the semi-data/semi-diskless guides would also work for systems in which
     1. [Create a semi-data/semi-diskless install](create-semi-data-install/_index.md)
         1. [Use modified setup-alpine procedure](use-modified-setup-alpine-procedure.md)
         2. [Commit LBU](commit-lbu.md)
-    2. [Create an encrypted LVM 'sys' aka 'classic' install](create-sys-aka-classic-install/_index.md)
+    2. [Create an encrypted LVM 'sys' aka 'classic' install](create-sys-aka-classic-install.md)
 5. [Reboot](reboot.md)
 6. [Kernel and hardware notes - hardware specific tweaks & configuration](../kernel-and-hardware-notes/hardware-specific-tweaks-configs.md)
 
