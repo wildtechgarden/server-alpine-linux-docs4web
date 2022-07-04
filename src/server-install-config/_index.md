@@ -36,6 +36,8 @@ Finally, the semi-data/semi-diskless guides would also work for systems in which
 
 [Recommended tweaks and configuration](../recommended-tweaks-and-configs/_index.md)
 
+['Create Alpine Disk Image' script by Dermot Bradley](https://github.com/dermotbradley/create-alpine-disk-image)
+
 ## Troubleshooting
 
 * [First boot troubleshooting](firstboot-troubleshooting.md)
