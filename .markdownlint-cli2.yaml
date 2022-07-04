@@ -4,6 +4,7 @@ config:
         style: "atx"
     MD007:
         indent: 3
+    MD009: false
     MD013:
         line_length: 10000000
         heading_line_length: 70
