@@ -34,6 +34,8 @@ In addition, these documents try to keep things DRY (don't repeat yourself) in o
 
 [HowTos](howtos/_index.md)
 
+[Developing Alpine Linux](developing/_index.md)
+
 --------
 
 ## Contributing
