@@ -3,7 +3,7 @@ date: 2022-07-09
 title: "Modifying install images"
 tags: ["alpine","docs","linux","devel"]
 series: ["docs4web"]
-notCanonical: true
+pageCanonical: false
 toCanonical: https://wiki.alpinelinux.org/wiki/Testing_modified_install_images_and_packages
 ---
 

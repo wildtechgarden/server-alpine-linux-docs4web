@@ -3,7 +3,7 @@ date: 2022-07-09
 title: "Netboot Alpine Linux using iPXE"
 tags: ["alpine","howtos","docs","linux","sysadmin-devops"]
 series: ["docs4web","alpine-linux-local-server"]
-notCanonical: true
+pageCanonical: false
 toCanonical: https://wiki.alpinelinux.org/wiki/Netboot_Alpine_Linux_using_iPXE
 ---
 
