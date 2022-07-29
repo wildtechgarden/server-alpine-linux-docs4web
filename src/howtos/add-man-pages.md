@@ -3,9 +3,9 @@ date: 2022-04-28
 title: "Add man pages and other on-system docs"
 tags: ["alpine","howtos","docs","linux","sysadmin-devops"]
 series: ["docs4web","alpine-linux-local-server"]
+description: "For many systems you should have plenty of available RAM and storage to add the online documentation (mostly in the form of ``man`` pages)."
+summary: "For many systems you should have plenty of available RAM and storage to add the online documentation (mostly in the form of ``man`` pages)."
 ---
-
-# Add man pages and other on-system docs
 
 ## Overview
 

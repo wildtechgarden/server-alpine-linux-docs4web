@@ -1,15 +1,15 @@
 ---
 date: 2022-04-28
-title: "Add packages for pre-mount filesystem check"
+title: "Add pre-mount filesystem check"
 tags: ["alpine","howtos","docs","linux","sysadmin-devops"]
 series: ["docs4web","alpine-linux-local-server"]
+description: "Where possible it is a best practise to safely check your filesystems before mounting them. Here we add the needed packages."
+summary: "Where possible it is a best practise to safely check your filesystems before mounting them. Here we add the needed packages."
 ---
-
-# Add packages for pre-mount filesystem check
 
 ## Overview
 
-Where possible it is a best practise to check your filesystem before mounting them (especially read-write) to ensure you are not working with a corrupted (and further damaging a) filesystem.
+Where possible it is a best practise to safely check your filesystems before mounting them (especially read-write) to ensure you are not working with a corrupted (and further damaging a) filesystem.
 
 ## (Re)install the filesystem tools you need
 

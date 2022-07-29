@@ -1,11 +1,11 @@
 ---
 date: 2022-04-29
-title: "Howtos"
+title: "HOWTOs"
 tags: ["alpine","howtos","docs","linux","sysadmin-devops"]
 series: ["docs4web","alpine-linux-local-server"]
+description: "Miscellaneous tasks and possibly useful things to do on your Alpine Linux system."
+summary: "Miscellaneous tasks and possibly useful things to do on your Alpine Linux system."
 ---
-
-# HowTos
 
 In alphabetical order
 

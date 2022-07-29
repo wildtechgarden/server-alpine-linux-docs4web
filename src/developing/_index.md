@@ -3,9 +3,11 @@ date: 2022-07-09
 title: "Developing"
 tags: ["alpine","docs","linux","devel"]
 series: ["docs4web"]
+description: "Topics related to developing Alpine Linux or for Alpine Linux"
+summary: "Topics related to developing Alpine Linux or for Alpine Linux"
+omitFromList: true
+includeInRSS: false
 ---
-
-# Developing Alpine Linux
 
 In alphabetical order
 

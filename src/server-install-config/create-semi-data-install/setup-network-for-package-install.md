@@ -1,11 +1,11 @@
 ---
 date: 2022-04-29
 title: Setup network required for package installation
-tags: ["alpine","configuration","docs","hosting","linux","network","self-host","storage","sysadmin-devops","raspberry-pi","sbc"]
+tags: ["alpine","configuration","docs","hosting","linux","network","self-host","storage","sysadmin-devops"]
 series: ["docs4web","alpine-linux-local-server"]
+description: "Use the setup-* scripts to setup networking for bootstrap package installation on Alpine Linux"
+summary: "Use the setup-\\* scripts to setup networking for bootstrap package installation on Alpine Linux"
 ---
-
-# Setup network required for package installation
 
 ## Use Alpine Linux setup sub-scripts for network/DNS
 

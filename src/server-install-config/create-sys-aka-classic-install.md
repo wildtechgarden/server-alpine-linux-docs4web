@@ -1,11 +1,11 @@
 ---
 date: 2022-06-27
-title: "Create 'sys' aka 'classic' install"
+title: "Create encrypted LVM 'sys' aka 'classic' install"
 tags: ["alpine","configuration","docs","hosting","linux","self-host","storage","sysadmin-devops","raspberry-pi","sbc"]
 series: ["docs4web","alpine-linux-local-server"]
+description: "Easily create an encrypted LVM 'sys' (aka 'classic') install using Alpine Linux 3.16.0"
+summary: "Easily create an encrypted LVM 'sys' (aka 'classic') install using Alpine Linux 3.16.0"
 ---
-
-# Create encrypted LVM 'sys' aka 'classic' install
 
 ## Overview
 

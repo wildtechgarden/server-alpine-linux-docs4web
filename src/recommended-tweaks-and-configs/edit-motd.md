@@ -3,9 +3,9 @@ date: 2022-04-28
 title: "Edit message of the day (MOTD)"
 tags: ["alpine","howtos","docs","linux","sysadmin-devops"]
 series: ["docs4web","alpine-linux-local-server"]
+description: "The default MOTD is potentially confusing, and is annoying in any event, once you have set up your system."
+summary: "The default MOTD is potentially confusing, and is annoying in any event, once you have set up your system."
 ---
-
-# Edit message of the day (MOTD)
 
 ## Overview
 

@@ -3,9 +3,10 @@ date: 2022-04-30
 title: Prepare SD card using GNOME Disks
 tags: ["alpine","configuration","docs","linux","sysadmin-devops","raspberry-pi","sbc"]
 series: ["docs4web","alpine-linux-local-server"]
----
+description: "Prepare the Alpine Linux bootstrap SD card for your Raspberry Pi using Gnome 'Disks'"
+summary: "Prepare the Alpine Linux bootstrap SD card for your Raspberry Pi using Gnome 'Disks'"
 
-# Prepare SD card using GNOME Disks
+---
 
 ## Procedure
 

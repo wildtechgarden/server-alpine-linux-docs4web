@@ -1,11 +1,11 @@
 ---
 date: 2022-04-28
 title: Use modified 'setup-alpine' procedure
-tags: ["alpine","configuration","docs","hosting","linux","self-host","sysadmin-devops","raspberry-pi","sbc"]
+tags: ["alpine","configuration","docs","hosting","linux","self-host","sysadmin-devops"]
 series: ["docs4web","alpine-linux-local-server"]
+description: "For a semi-{data,diskless} setup you need to modify the standard 'setup-alpine' procedure. Here we provide the details."
+summary: "For a semi-{data,diskless} setup you need to modify the standard 'setup-alpine' procedure. Here we provide the details."
 ---
-
-# Use modified 'setup-alpine' procedure
 
 ## Overview
 

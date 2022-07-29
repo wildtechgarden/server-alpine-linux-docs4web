@@ -3,9 +3,9 @@ date: 2022-04-28
 title: "Use encrypted LBU"
 tags: ["alpine","howtos","docs","linux","security","sysadmin-devops"]
 series: ["docs4web","alpine-linux-local-server"]
+description: "Unless you need headless, or unattended reboots or power up, it is highly recommended to use an encrypted configuration backup."
+summary: "Unless you need headless, or unattended reboots or power up, it is highly recommended to use an encrypted configuration backup."
 ---
-
-# Use encrypted LBU
 
 ## Overview
 

@@ -5,9 +5,9 @@ tags: ["alpine","howtos","docs","linux","sysadmin-devops"]
 series: ["docs4web","alpine-linux-local-server"]
 pageCanonical: false
 toCanonical: https://wiki.alpinelinux.org/wiki/Netboot_Alpine_Linux_using_iPXE
+description: "It can be especially useful to use network booting to create virtual machines without using install media on the VM. To do that we netboot with iPXE."
+summary: "It can be especially useful to use network booting to create virtual machines without using install media on the VM. To do that we netboot with iPXE."
 ---
-
-# Netboot Alpine Linux using iPXE
 
 ## Copy the files needed by iPXE to a web server
 
@@ -92,7 +92,7 @@ qemu-system-x86_64 -boot n -m 512M -enable-kvm -device virtio-net,netdev=n1 -net
 * Use `virt-install` such as:
   
   ```shell
-  virt-install -n vm-name --memory 512 --vcpus 1 --pxe --disk size=5,bus=virtio --network network=ipxeeboot,model=virtio --input tablet --video virtio --os-variant id=http://alpinelinux.org/alpinelinux/3.13
+  virt-install -n vm-name --memory 512 --vcpus 1 --pxe --disk size=5,bus=virtio --network network=ipxeboot,model=virtio --input tablet --video virtio --os-variant id=http://alpinelinux.org/alpinelinux/3.13
   ```
 
 ### On Vultr.com

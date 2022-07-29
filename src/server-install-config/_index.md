@@ -3,13 +3,13 @@ date: 2022-04-28
 title: Server install & configure
 tags: ["alpine","configuration","docs","hosting","linux","self-host","sysadmin-devops","raspberry-pi","sbc"]
 series: ["docs4web","alpine-linux-local-server"]
+summary: "This set of guides and recommendations is aimed at the use of Alpine for your local servers on physical hardware where you have access to the boot console."
+description: "This set of guides and recommendations is aimed at the use of Alpine for your local servers on physical hardware where you have access to the boot console."
 ---
-
-# Server install & configure
 
 ## Overview
 
-This set of guides and recommendations is aimed at the use of Alpine as your local servers on physical hardware where you have access to the console on boot.
+This set of guides and recommendations is aimed at the use of Alpine for your local servers on physical hardware where you have access to the boot console.
 
 Headless and cloud deployments remain to be added (cloud deployment work is in progress based on [Packer](https://packer.io), [Terraform](https://terraform.io), and [Vault](https://vaultproject.io) at the time of this writing [June 27, 2022]).
 
@@ -36,7 +36,7 @@ Finally, the semi-data/semi-diskless guides would also work for systems in which
 
 [Recommended tweaks and configuration](../recommended-tweaks-and-configs/_index.md)
 
-['Create Alpine Disk Image' script by Dermot Bradley](https://github.com/dermotbradley/create-alpine-disk-image)
+['Create Alpine Disk Image' script by Dermot Bradley (on GitHub)](https://github.com/dermotbradley/create-alpine-disk-image)
 
 ## Troubleshooting
 

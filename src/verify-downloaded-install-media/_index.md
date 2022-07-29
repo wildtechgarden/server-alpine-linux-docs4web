@@ -1,11 +1,11 @@
 ---
 date: 2022-05-01
 title: Download and verify installation media
-tags: ["alpine","configuration","docs","linux","security","sysadmin-devops","raspberry-pi","sbc"]
+tags: ["alpine","configuration","docs","linux","security","sysadmin-devops"]
 series: ["docs4web","alpine-linux-local-server"]
+description: "Cryptographically verify your Alpine Linux download"
+summary: "Cryptographically verify your [Alpine Linux](https://alpinelinux.org) download"
 ---
-
-# Download and verify installation media
 
 ## Download the installation media
 

@@ -3,9 +3,9 @@ date: 2022-04-29
 title: Obtain and verify install tarball
 tags: ["alpine","configuration","docs","linux","security","sysadmin-devops","raspberry-pi","sbc"]
 series: ["docs4web","alpine-linux-local-server"]
+description: "Obtain the right Alpine Linux image for your Raspberry Pi model"
+summary: "Obtain the right Alpine Linux image for your Raspberry Pi model"
 ---
-
-# Obtain and verify install tarball
 
 ## Obtain the official Alpine Linux image
 
@@ -38,6 +38,6 @@ You should obtain the appropriate tarball as well as sha256 and GnuPG signatures
 | armv7   | [Latest stable armv7](https://dl-cdn.alpinelinux.org/alpine/latest-stable/releases/armv7/)     |
 | aarch64 | [Latest stable aarch64](https://dl-cdn.alpinelinux.org/alpine/latest-stable/releases/aarch64/) |
 
-### Verify the tarball has the expected contents
+## Verify the tarball has the expected contents
 
 See '[verify downloaded installation media](../../verify-downloaded-install-media/_index.md)'.
