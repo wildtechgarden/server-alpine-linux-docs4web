@@ -1,7 +1,7 @@
 ---
 date: 2022-04-29
 title: "Configure off-system backups"
-tags: ["alpine","backups","howtos","docs","linux","sysadmin-devops"]
+tags: ["alpine","backup","howtos","docs","linux","sysadmin-devops"]
 series: ["docs4web","alpine-linux-local-server"]
 description: "You should backup your system. Really."
 summary: "You should backup your system. Really."
