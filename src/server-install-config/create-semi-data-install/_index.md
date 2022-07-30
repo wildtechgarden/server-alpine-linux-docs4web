@@ -23,7 +23,7 @@ We don't cover using encrypted storage here, yet. In the meantime, if you want t
 
 #### For Raspberry Pi systems
 
-If you followed [Installation on Raspberry Pi](../../install-on-raspberry-pi/_index.md) the diskless part is already the default, so skip to [add a config partition](#add-a-and39configand39-partition).
+If you followed [Installation on Raspberry Pi](../../install-on-raspberry-pi/_index.md) the diskless part is already the default, so skip to [add a config partition](#add-a-config-partition).
 
 #### For x86_64 or x86 systems
 
