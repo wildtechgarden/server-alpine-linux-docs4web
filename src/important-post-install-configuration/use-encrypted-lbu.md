@@ -11,7 +11,7 @@ summary: "Unless you need headless, or unattended reboots or power up, it is hig
 
 Unless you need headless, or unattended reboots or power up (e.g. after power loss), it is highly recommended to use an encrypted configuration backup. This protects the data while the system is down (while the system up, the need to login, and the usual user access mechanism apply, but while powered down a FAT32 partition is easily read, or even any other unencrypted partition.
 
-If you are running headless but have an option of using a serial port on your computer during boot (instead of keyboard and monitor) then you might want to read the docs on using serial console on Alpine Linux: <https://wiki.alpinelinux.org/wiki/Enable_Serial_Console_on_Boot.>
+If you are running headless but have an option of using a serial port on your computer during boot (instead of keyboard and monitor) then you might want to read the docs on using serial console on Alpine Linux: <https://wiki.alpinelinux.org/wiki/Enable_Serial_Console_on_Boot>.
 
 Encrypting the config and APK partition is not supported by default by Alpine Linux at the present time, so boots would fail with that option, unless you modify the initramfs.
 

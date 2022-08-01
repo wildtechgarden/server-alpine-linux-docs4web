@@ -11,7 +11,7 @@ description: "This set of guides and recommendations is aimed at the use of Alpi
 
 This set of guides and recommendations is aimed at the use of Alpine for your local servers on physical hardware where you have access to the boot console.
 
-Headless and cloud deployments remain to be added (cloud deployment work is in progress based on [Packer](https://packer.io), [Terraform](https://terraform.io), and [Vault](https://vaultproject.io) at the time of this writing [June 27, 2022]).
+Headless and cloud deployments remain to be added (cloud deployment work is in progress based on [Packer](https://www.packer.io/), [Terraform](https://www.terraform.io/), and [Vault](https://www.vaultproject.io/) at the time of this writing [June 27, 2022]).
 
 Also not documented here is fully 'automated' bare metal installation and configuration; that likely will be added based on these pages, but in another set of guides.
 
