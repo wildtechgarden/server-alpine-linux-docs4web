@@ -1,7 +1,7 @@
 ---
 date: 2022-04-29
 title: Guides for setting kernel parameters
-tags: ["alpine","kernel","linux","sysadmin-devops"]
+tags: ["alpine","linux","sysadmin-devops"]
 series: ["docs4web","alpine-linux-local-server"]
 description: "Information on setting kernel parameters for Alpine Linux"
 summary: "Information on setting kernel parameters for Alpine Linux"

@@ -1,7 +1,7 @@
 ---
 date: 2022-04-29
 title: Hardware-specific tweaks and configuration
-tags: ["alpine","kernel","linux","sysadmin-devops","raspberry-pi"]
+tags: ["alpine","linux","sysadmin-devops","raspberry-pi"]
 series: ["docs4web","alpine-linux-local-server"]
 description: "Tweaks to Alpine Linux for specific hardware including packages and kernel parameters"
 summary: "Tweaks to Alpine Linux for specific hardware including packages and kernel parameters"
