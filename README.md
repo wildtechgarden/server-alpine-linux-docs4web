@@ -6,7 +6,7 @@ You probably want to [go to the actual documentation](src/_index.md)
 
 --------
 
-Copyright © 2022 Daniel F. Dickinson
+Copyright © 2022-2023 Daniel F. Dickinson
 
 Licensed under the Creative Commons Attribution Share-Alike 4.0 International license.
 
