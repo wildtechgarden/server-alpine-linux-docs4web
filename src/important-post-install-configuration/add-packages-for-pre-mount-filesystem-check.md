@@ -1,7 +1,7 @@
 ---
 date: 2022-04-28
 title: "Add pre-mount filesystem check"
-tags: ["alpine","howtos","docs","linux","sysadmin-devops"]
+tags: ["alpine","howtos","linux","sysadmin-devops"]
 series: ["docs4web","alpine-linux-local-server"]
 description: "Where possible it is a best practise to safely check your filesystems before mounting them. Here we add the needed packages."
 summary: "Where possible it is a best practise to safely check your filesystems before mounting them. Here we add the needed packages."

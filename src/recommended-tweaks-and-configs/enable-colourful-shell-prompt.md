@@ -1,7 +1,7 @@
 ---
 date: 2022-04-28
 title: "Enable enhanced shell prompt"
-tags: ["alpine","howtos","docs","linux","shell","sysadmin-devops"]
+tags: ["alpine","howtos","linux","sysadmin-devops"]
 series: ["docs4web","alpine-linux-local-server"]
 description: Add colour and context information to the ash prompt.
 summary: Add colour and context information to the ash prompt.

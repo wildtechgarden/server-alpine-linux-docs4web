@@ -1,7 +1,7 @@
 ---
 date: 2022-04-29
 title: Important post-install configuration
-tags: ["alpine","configuration","docs","hosting","linux","self-host","sysadmin-devops"]
+tags: ["alpine","configuration","linux","self-host","sysadmin-devops"]
 series: ["docs4web","alpine-linux-local-server"]
 description: "The following are not part of the base install, but either can be essential to system function or are widely accepted best practices."
 summary: "The following are not part of the base install, but either can be essential to system function (like adding boot entropy for some headless systems like the Raspberry Pi) or are widely accepted best practices (like creating a non-root admin user and limiting time spent as root)."

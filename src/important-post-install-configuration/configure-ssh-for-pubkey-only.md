@@ -1,7 +1,7 @@
 ---
 date: 2022-04-28
 title: "Configure SSH to only allow pubkey logins"
-tags: ["alpine","howtos","docs","linux","security","sysadmin-devops"]
+tags: ["alpine","howtos","linux","sysadmin-devops"]
 series: ["docs4web","alpine-linux-local-server"]
 description: "Disallowing SSH login with only a username and password is a well known security best practise, therefore we implement it."
 summary: "Disallowing SSH login with only a username and password is a well known security best practise, therefore we implement it."

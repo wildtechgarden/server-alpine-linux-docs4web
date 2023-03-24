@@ -1,7 +1,7 @@
 ---
 date: 2022-04-29
 title: Prepare your SD card
-tags: ["alpine","configuration","docs","linux","sysadmin-devops","raspberry-pi","sbc"]
+tags: ["alpine","linux","sysadmin-devops","raspberry-pi"]
 series: ["docs4web","alpine-linux-local-server"]
 description: "Prepare the filesystem of the Alpine Linux bootstrap SD card for your Raspberry Pi"
 summary: "Prepare the filesystem of the Alpine Linux bootstrap SD card for your Raspberry Pi"

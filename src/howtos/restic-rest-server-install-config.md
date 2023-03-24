@@ -1,7 +1,7 @@
 ---
 date: 2022-04-28
 title: "restic/rest-server install & configure"
-tags: ["alpine","backup","configuration","docs","linux","sysadmin-devops"]
+tags: ["alpine","configuration","linux","sysadmin-devops"]
 series: ["docs4web","alpine-linux-local-server"]
 draft: true
 ---

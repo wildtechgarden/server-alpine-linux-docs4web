@@ -1,7 +1,7 @@
 ---
 date: 2022-04-28
 title: "Commit LBU (stores changes)"
-tags: ["alpine","howtos","docs","linux","sysadmin-devops"]
+tags: ["alpine","howtos","linux","sysadmin-devops"]
 series: ["docs4web","alpine-linux-local-server"]
 description: "Once you are sure everything is correct for the initial boot into your configured system, commit (store) your changes."
 summary: "Once you are sure everything is correct for the initial boot into your configured system, commit (store) your changes."

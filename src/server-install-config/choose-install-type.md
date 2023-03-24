@@ -1,7 +1,7 @@
 ---
 date: 2022-06-27
 title: Choose installation type
-tags: ["alpine","configuration","docs","hosting","linux","self-host","storage","sysadmin-devops","raspberry-pi","sbc"]
+tags: ["alpine","linux","self-host","sysadmin-devops","raspberry-pi"]
 series: ["docs4web","alpine-linux-local-server"]
 description: "A guide to some of your options for you target install 'type' when using Alpine Linux"
 summary: "A guide to some of your options for you target install 'type' when using Alpine Linux"

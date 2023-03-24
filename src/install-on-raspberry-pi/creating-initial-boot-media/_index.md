@@ -1,7 +1,7 @@
 ---
 date: 2022-04-29
 title: Creating initial boot media
-tags: ["alpine","configuration","docs","linux","sysadmin-devops","raspberry-pi","sbc"]
+tags: ["alpine","linux","sysadmin-devops","raspberry-pi"]
 series: ["docs4web","alpine-linux-local-server"]
 summary: "Guide to preparing an SD card to bootstrap an install of [Alpine Linux](https://alpinelinux.org) on a Raspberry Pi"
 description: "Guide to preparing an SD card to bootstrap an install of Alpine Linux on a Raspberry Pi"

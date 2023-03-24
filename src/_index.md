@@ -1,8 +1,8 @@
 ---
 date: 2022-04-29
 title: Alpine Linux as a server
-tags: ["alpine","configuration","docs","hosting","linux","self-host","sysadmin-devops","raspberry-pi","sbc"]
-series: ["docs4web","alpine-linux-local-server"]
+tags: ["alpine","linux","self-host","sysadmin-devops","raspberry-pi"]
+series: ["alpine-linux-local-server","docs4web"]
 summary: "Daniel's documentation for using [Alpine Linux](https://alpinelinux.org) for local servers on x86-64 and Raspberry Pi family."
 description: "Daniel's documentation for using Alpine Linux for local servers on x86-64 and Raspberry Pi family."
 cascade:

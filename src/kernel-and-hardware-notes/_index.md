@@ -1,7 +1,7 @@
 ---
 date: 2022-04-29
 title: Kernel and hardware notes
-tags: ["alpine","docs","kernel","linux","sysadmin-devops"]
+tags: ["alpine","linux","sysadmin-devops"]
 series: ["docs4web","alpine-linux-local-server"]
 description: "Setting kernel parameters for hardware and OS tweaks"
 summary: "Setting kernel parameters for hardware and OS tweaks"

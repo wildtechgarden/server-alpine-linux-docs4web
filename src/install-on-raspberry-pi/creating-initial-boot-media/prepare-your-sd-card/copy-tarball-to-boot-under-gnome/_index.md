@@ -1,7 +1,7 @@
 ---
 date: 2022-04-30
 title: Copy tarball to boot under Gnome
-tags: ["alpine","configuration","docs","linux","sysadmin-devops","raspberry-pi","sbc"]
+tags: ["alpine","linux","sysadmin-devops","raspberry-pi"]
 series: ["docs4web","alpine-linux-local-server"]
 description: "Copy the needed files to your SD card, from the Raspbery Pi tarball for Alpine Linux"
 summary: "Copy the needed files to your SD card, from the Raspbery Pi tarball for Alpine Linux"

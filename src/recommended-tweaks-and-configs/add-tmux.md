@@ -1,7 +1,7 @@
 ---
 date: 2022-04-28
 title: "Add tmux"
-tags: ["alpine","howtos","docs","linux","sysadmin-devops"]
+tags: ["alpine","howtos","sysadmin-devops"]
 series: ["docs4web","alpine-linux-local-server"]
 description: "Tmux is a handy tool that gives the ability to have multiple (text) windows in a single terminal session, and persists your session."
 summary: "Tmux is a handy tool that gives the ability to have multiple (text) windows in a single terminal session, as well as persisting your session in case of disconnect."

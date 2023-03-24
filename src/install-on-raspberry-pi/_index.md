@@ -1,7 +1,7 @@
 ---
 date: 2022-04-29
 title: Use Alpine Linux on Raspberry Pi as a server
-tags: ["alpine","configuration","docs","hosting","linux","self-host","sysadmin-devops","raspberry-pi","sbc"]
+tags: ["alpine","linux","self-host","sysadmin-devops","raspberry-pi"]
 series: ["docs4web","alpine-linux-local-server"]
 description: "Raspberry Pi-specific notes for preparing and installing Alpine Linux"
 summary: "Raspberry Pi-specific notes for preparing and installing [Alpine Linux](https://alpinelinux.org)"

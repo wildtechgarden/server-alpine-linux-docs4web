@@ -1,7 +1,7 @@
 ---
 date: 2022-04-28
 title: Create semi-{data, diskless} install
-tags: ["alpine","configuration","docs","hosting","linux","self-host","storage","sysadmin-devops","raspberry-pi","sbc"]
+tags: ["alpine","linux","self-host","sysadmin-devops","raspberry-pi"]
 series: ["docs4web","alpine-linux-local-server"]
 description: "This configuration is like diskless mode except that `home`, parts of `/var`, and others are mounted for persistence."
 summary: "This configuration is like diskless mode except that `home`, parts of `/var`, and others are mounted for persistence. Also, like a data install with only _parts_ of `/var` made persistent."

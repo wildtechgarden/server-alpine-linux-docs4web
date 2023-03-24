@@ -1,7 +1,7 @@
 ---
 date: 2022-04-28
 title: Server install & configure
-tags: ["alpine","configuration","docs","hosting","linux","self-host","sysadmin-devops","raspberry-pi","sbc"]
+tags: ["alpine","linux","self-host","sysadmin-devops","raspberry-pi"]
 series: ["docs4web","alpine-linux-local-server"]
 summary: "This set of guides and recommendations is aimed at the use of Alpine for your local servers on physical hardware where you have access to the boot console."
 description: "This set of guides and recommendations is aimed at the use of Alpine for your local servers on physical hardware where you have access to the boot console."

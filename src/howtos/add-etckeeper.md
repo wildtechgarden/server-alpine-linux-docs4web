@@ -1,7 +1,7 @@
 ---
 date: 2022-04-28
 title: "Add etckeeper"
-tags: ["alpine","howtos","docs","linux","sysadmin-devops"]
+tags: ["alpine","howtos","linux","sysadmin-devops"]
 series: ["docs4web","alpine-linux-local-server"]
 description: "While the LBU mechanism with backups allows restoring to previous state it lacks commented history. It also does not apply to 'sys' mode installs."
 summary: "While the LBU mechanism with backups allows restoring to previous state it lacks commented history. It also does not apply to 'sys' mode installs."

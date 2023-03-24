@@ -1,7 +1,7 @@
 ---
 date: 2022-04-29
 title: Obtain and verify install tarball
-tags: ["alpine","configuration","docs","linux","security","sysadmin-devops","raspberry-pi","sbc"]
+tags: ["alpine","linux","security","sysadmin-devops","raspberry-pi"]
 series: ["docs4web","alpine-linux-local-server"]
 description: "Obtain the right Alpine Linux image for your Raspberry Pi model"
 summary: "Obtain the right Alpine Linux image for your Raspberry Pi model"

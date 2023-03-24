@@ -1,7 +1,7 @@
 ---
 date: 2022-04-28
 title: "Add etckeeper git remote for pushing on commit"
-tags: ["alpine","howtos","docs","linux","sysadmin-devops"]
+tags: ["alpine","howtos","linux","sysadmin-devops"]
 series: ["docs4web","alpine-linux-local-server"]
 description: "Tracking configuration changes in etckeeper is great, but even better is storing in an off-system private repository."
 summary: "Tracking configuration changes in etckeeper is great, but even better is storing in an off-system private repository."

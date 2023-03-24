@@ -1,7 +1,7 @@
 ---
 date: 2022-04-28
 title: Recommended tweaks and configuration
-tags: ["alpine","configuration","docs","hosting","linux","self-host","sysadmin-devops"]
+tags: ["alpine","linux","self-host","sysadmin-devops"]
 series: ["docs4web","alpine-linux-local-server"]
 description: "Configure backups on all systems, and create a more comfortable terminal environment for system on which you use the shell."
 summary: "Configure backups on all systems, and create a more comfortable terminal environment for system on which you use the shell."

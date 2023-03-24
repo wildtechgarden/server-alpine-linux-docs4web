@@ -1,7 +1,7 @@
 ---
 date: 2022-04-29
 title: Do pre-boot tweaks
-tags: ["alpine","configuration","docs","linux","sysadmin-devops","raspberry-pi","sbc"]
+tags: ["alpine","linux","sysadmin-devops","raspberry-pi"]
 series: ["docs4web","alpine-linux-local-server"]
 description: "Before installing you need to do some tweaks to the SD card boot partition"
 summary: "Before installing you need to do some tweaks to the SD card boot partition"

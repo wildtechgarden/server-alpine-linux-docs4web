@@ -1,7 +1,7 @@
 ---
 date: 2022-04-28
 title: For headless systems, add boot entropy
-tags: ["alpine","configuration","docs","hosting","linux","self-host","sysadmin-devops"]
+tags: ["alpine","linux","self-host","sysadmin-devops"]
 series: ["docs4web","alpine-linux-local-server"]
 description: "Some systems might take an excessively long time to boot when no peripherals are attached. In those cases, add the rng-tools package."
 summary: "Some systems might take an excessively long time to boot when no peripherals are attached (not only with the Pi series). In those cases it may be useful to add the rng-tools package to speed up the gathering of entropy."

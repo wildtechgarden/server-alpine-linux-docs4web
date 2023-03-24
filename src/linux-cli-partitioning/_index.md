@@ -1,7 +1,7 @@
 ---
 date: 2022-05-01
 title: Partitioning on the Linux command line (CLI)
-tags: ["alpine","configuration","docs","linux","sysadmin-devops"]
+tags: ["alpine","linux","sysadmin-devops"]
 series: ["docs4web","alpine-linux-local-server"]
 description: "Various methods of partitioning storage media on the Linux command line (CLI)"
 summary: "Various methods of partitioning storage media on the Linux command line (CLI)"

@@ -1,7 +1,7 @@
 ---
 date: 2022-04-30
 title: Add and use filesystem tools
-tags: ["alpine","configuration","docs","filesystem", "hosting","linux","self-host","storage","sysadmin-devops"]
+tags: ["alpine","linux","self-host","sysadmin-devops"]
 series: ["docs4web","alpine-linux-local-server"]
 description: "You need to add the tools that will let you format/create one or more additional volumes/filesystems of your choice."
 summary: "You need to add the tools that will let you format/create one or more additional volumes/filesystems of your choice."
