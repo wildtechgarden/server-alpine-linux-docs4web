@@ -18,7 +18,7 @@ summary: "Prepare the Alpine Linux bootstrap SD card for your Raspberry Pi using
    [![Gnome Disks while adding a primary partition](02-gnome-disks-add-boot-partition.png)](02-gnome-disks-add-boot-partition.png)
 
 3. Format as VFAT (part of partition-creation wizard)
-   [![Gnome Disks add parition wizard format as vfat](03-gnome-disks-format-boot-as-vfat.png)](03-gnome-disks-format-boot-as-vfat.png)
+   [![Gnome Disks add partition wizard format as vfat](03-gnome-disks-format-boot-as-vfat.png)](03-gnome-disks-format-boot-as-vfat.png)
 
 4. Result is a partition formatted as FAT 16
    [![Gnome Disks showing SD card with FAT 16 boot partition](04-gnome-disks-sd-card-with-boot-partition.png)](04-gnome-disks-sd-card-with-boot-partition.png)
@@ -30,7 +30,7 @@ summary: "Prepare the Alpine Linux bootstrap SD card for your Raspberry Pi using
    [![Drop to terminal to reformat as FAT 32 because GNOME disks doesn't have that option](06-terminal-reformat-as-fat32.png)](06-terminal-reformat-as-fat32.png)
 
 7. Resulting FAT 32 formatted boot partition
-   [![Gnome Disks showing boot parition formatted as FAT 32](07-gnome-disks-sd-card-with-fat32-boot-partition.png)](07-gnome-disks-sd-card-with-fat32-boot-partition.png)
+   [![Gnome Disks showing boot partition formatted as FAT 32](07-gnome-disks-sd-card-with-fat32-boot-partition.png)](07-gnome-disks-sd-card-with-fat32-boot-partition.png)
 
 8. Mount the boot partition for next steps
    [![Gnome Disks showing boot partition mounted](08-gnome-disks-sd-card-mounted-boot-partition.png)](08-gnome-disks-sd-card-mounted-boot-partition.png)

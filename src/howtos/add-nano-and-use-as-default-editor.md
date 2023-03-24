@@ -7,8 +7,6 @@ description: "For many users `vi` (the default editor for Alpine) is difficult a
 summary: "For many users `vi` (the default editor for Alpine) is difficult and confusing to use."
 ---
 
-# Add nano and use as default editor
-
 ## Overview
 
 For many users `vi` (the default editor for Alpine) is difficult and confusing to use. Even if that is not the case for you, if you find it helpful to have the same experience as others you wish to help, you might implement this for your own use as well. \[_AUTHOR's NOTE_: I am guilty of _not_ doing this.]

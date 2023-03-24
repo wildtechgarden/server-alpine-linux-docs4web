@@ -46,7 +46,7 @@ Modifying packages that are part of the install diskless boot (e.g. on install m
 #### Identify all the dependencies of the base packages
 
 * Create a file with the list of base packages on a single line, separated by spaces. For example a file named `~/base-packages.lst` containing:
-  
+
   ```shell
   package1 package2 package3
   ```
@@ -54,7 +54,7 @@ Modifying packages that are part of the install diskless boot (e.g. on install m
 * Install the package `lua-aports`
 
 * From a package directory in a package from `aports`, issue the following command:
-  
+
   ```shell
   ap recursive-deps $(cat ~/base-packages.lst) >~/base-deps.lst
   ```
@@ -64,13 +64,13 @@ Modifying packages that are part of the install diskless boot (e.g. on install m
 ##### Create required list of package directories in `aports`
 
 * Take the list of base packages and dependencies above and create a single file with all packages on a single line, separated by spaces. For `~/base-deps.lst` above you could do:
-  
+
   ```shell
   cat ~/base-deps.lst ~/base-pkgs.lst | tr $'\n' ' ' >~/oneline-deps.lst
   ```
 
 * From a package directory in a package from `aports`, issue the following command:
-  
+
   ```shell
   ap builddirs $(cat ~/oneline-deps.lst) >~/packages-to-build.lst
   ```
@@ -86,7 +86,7 @@ mkdir -p ~/packages/main
 * **NOTE**: This will break things if you are not running latest (edge) Alpine in your build environment
 
 * Assuming your user home dir is `/home/user`, then to the file `/etc/apk/repositories` add
-  
+
   ```shell
   /home/user/packages/main
   ```

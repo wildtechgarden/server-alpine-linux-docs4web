@@ -6,8 +6,6 @@ series: ["docs4web","alpine-linux-local-server"]
 draft: true
 ---
 
-# Install and configure restic/rest-server
-
 ``` shell
 apk add rest-server \
   rest-server-doc # Optional
@@ -35,7 +33,7 @@ And configure `REST_SERVER_PATH` and any additional options (`REST_SERVER_OPTS`)
 ## Enable on start up
 
 ```shell
-rc-update add rest-server 
+rc-update add rest-server
 ```
 
 ## Start it immediately

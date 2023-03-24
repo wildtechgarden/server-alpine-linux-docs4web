@@ -67,7 +67,7 @@ The following command should be run as root (e.g. prefixed with `sudo` or doas  
 4. This will require to use ``etckeeper commit "A message about the commit"`` before installing with APK, if there are changes to `/etc` you have not already committed. This makes the logs more useful than the automatic messages that let one be too careless.
 
     ``` shell
-    AVOID_COMMIT_BEFORE_INSTALL=1 
+    AVOID_COMMIT_BEFORE_INSTALL=1
     ```
 
 5. Add root's ``.gitconfig`` to LBU backups

@@ -9,7 +9,7 @@ summary: "Prepare the filesystem of the Alpine Linux bootstrap SD card for your 
 
 ## Partition the SD card
 
-### On Windows 10
+### Windows 10 Partitioning
 
 #### Using built-in GUI 'Disk Management' feature
 
@@ -23,7 +23,7 @@ TBD
 
 TBD
 
-### On Linux (many distros)
+### Linux (many distros) Partitioning
 
 #### GUI
 
@@ -35,19 +35,19 @@ TBD
 
 [Creating a filesystem on the Linux command line](../../../server-install-config/create-semi-data-install/add-and-use-filesystem-tools.md#vfatfat32fat16)
 
-### On Mac OS
+### Mac OS Partitioning
 
 TBD
 
 ## Copy the tarball contents to 'boot' partition
 
-### On Windows 10
+### Tarball extract on Windows 10
 
 You will need to install a program such a [7-zip](https://www.7-zip.org/)
 
 TBD
 
-### On Linux (many distros)
+### Tarball extract on Linux (many distros)
 
 [Copy install tarball to boot partition using GUI file manager](copy-tarball-to-boot-under-gnome/_index.md)
 
@@ -59,6 +59,6 @@ Assuming you have mounted your new boot partition on `/mnt` you can (as root) do
 tar -C /mnt -xzf /path/to/install-tarball.tar.gz
 ```
 
-### On Mac OS
+### Tarball extract on Mac OS
 
 TBD

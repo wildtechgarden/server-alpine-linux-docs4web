@@ -25,7 +25,7 @@ In our examples we have been using the username `newadmin`.
 
 2. On the server, logged in as `newadmin`
 3. `cd ~` (Make sure you are in the base of your home directory)
-4. `chmod 0700 .` (Make the home directory accessible only by `newamdin`)
+4. `chmod 0700 .` (Make the home directory accessible only by `newadmin`)
 5. `mkdir p -m 0700 .ssh` (Make the standard directory for holding SSH keys, and make it accessible only by `newadmin`, if the directory does not already exist).
 6. `cd .ssh`
 7. `touch authorized_keys` (Make an empty file (`authorized_keys`) for public keys that are accepted for login, if the file does not already exist).
@@ -47,7 +47,7 @@ PermitRootLogin no
 
 ## Configure sshd_config to prevent password and keyboard-interactive logins
 
-Edit `/etc/ssh/sshd_config` and change `PasswordAuthencation` and `KbdInteractiveAuthentication` to
+Edit `/etc/ssh/sshd_config` and change `PasswordAuthentication` and `KbdInteractiveAuthentication` to
 
 ```shell
 PasswordAuthentication no

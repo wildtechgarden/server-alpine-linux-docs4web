@@ -16,13 +16,13 @@ summary: "It can be especially useful to use network booting to create virtual m
 * Copy the netboot tarball (for example the [3.16.0 stable release of Alpine's netboot image for x86_64](https://dl-cdn.alpinelinux.org/alpine/v3.16/releases/x86_64/alpine-netboot-3.16.0-x86_64.tar.gz)) to your non-root admin user on your web server.
 
 * Extract the netboot tarball to your webserver directory. For example:
-  
+
   ```shell
   tar -C /var/www/ipxe-boot.example.com -xzf alpine-netboot-3.16.0-x86_64.tar.gz
   ```
 
 * This will create a directory structure such as:
-  
+
   ```shell
   boot/
   boot/initramfs-lts
@@ -68,7 +68,7 @@ qemu-system-x86_64 -boot n -m 512M -enable-kvm -device virtio-net,netdev=n1 -net
 * Copy the `boot.ipxe` script to your webserver at `/var/www/ipxe-boot.example.com/boot.ipxe` (substituting for your actual directory, of course).
 
 * Create a new NAT network with XML such:
-  
+
   ```xml
   <network>
     <name>ipxeboot</name>
@@ -90,7 +90,7 @@ qemu-system-x86_64 -boot n -m 512M -enable-kvm -device virtio-net,netdev=n1 -net
   ```
 
 * Use `virt-install` such as:
-  
+
   ```shell
   virt-install -n vm-name --memory 512 --vcpus 1 --pxe --disk size=5,bus=virtio --network network=ipxeboot,model=virtio --input tablet --video virtio --os-variant id=http://alpinelinux.org/alpinelinux/3.13
   ```

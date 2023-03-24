@@ -97,7 +97,7 @@ etckeeper commit "Add self-signed CA for gitserver.example.com"
    etckeeper commit "Enable push to gitserver (origin) on commit"
    ```
 
-   You should be prompted for the necessary credentials, and if entered corectly you should see the usual git push messages on the console.
+   You should be prompted for the necessary credentials, and if entered correctly you should see the usual git push messages on the console.
 
 ## Finally, commit to LBU
 

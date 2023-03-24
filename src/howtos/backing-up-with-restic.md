@@ -4,8 +4,6 @@ date: 2022-05-03
 draft: true
 ---
 
-# Backups with Restic
-
 ## Option 1: To an instance of restic's rest-server
 
 ## Option 2: Via SSH/SFTP

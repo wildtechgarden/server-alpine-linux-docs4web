@@ -22,18 +22,18 @@ Encrypting the config and APK partition is not supported by default by Alpine Li
    ```shell
    # What cipher to use with -e option
    DEFAULT_CIPHER=aes-256-cbc
-   
+
    # Uncomment the row below to encrypt config by default
    ENCRYPTION=$DEFAULT_CIPHER
-   
+
    # Uncomment below to avoid needing 'media' option to 'lbu commit'
-   # Can also be set to 'floppy'   
+   # Can also be set to 'floppy'  
    LBU_MEDIA=sda2
-   
+
    # Set the LBU_BACKUPDIR variable in case you prefer to save the apkovls
    # in a normal directory instead of mounting an external media.
    # LBU_BACKUPDIR=/root/config-backups
-   
+
    BACKUP_LIMIT=128
    ```
 

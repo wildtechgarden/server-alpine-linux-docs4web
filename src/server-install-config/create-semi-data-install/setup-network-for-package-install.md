@@ -22,7 +22,7 @@ summary: "Use the setup-\\* scripts to setup networking for bootstrap package in
 ## Use Alpine Linux setup sub-script to enable package repos
 
 * Execute `setup-apkrepos`.
-  
+
   You can use this as many times as you wish. Each time will append the repository you select in `/etc/apk/respositories`. This allows you to have multiple mirrors in your configuration, in case the default one is giving you trouble.
 
 * Execute `apk update`.

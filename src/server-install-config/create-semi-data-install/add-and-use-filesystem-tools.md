@@ -16,13 +16,13 @@ You need to add the tools that will let you format/create one or more additional
 A new flash file system for Linux; recommended for any flash (SD card, USB, etc)
 
 * Install filesystem tools
-  
+
   ```shell
   apk add f2fs-tools
   ```
 
 * Create filesystem (sample session)
-  
+
   ```shell
   mkfs.f2fs /dev/sda3
   ```
@@ -32,13 +32,13 @@ A new flash file system for Linux; recommended for any flash (SD card, USB, etc)
 A venerable Linux filesystem. Well supported (on non-UEFI x86/x86-64 systems one can boot from ext4 if one uses `extlinux` or `grub2` instead of `syslinux`)
 
 * Install package
-  
+
   ```shell
   apk add e2fsprogs
   ```
 
 * Create filesystem (sample session)
-  
+
   ```shell
   mkfs.ext4 -E lazy_itable_init=0,lazy_journal_init=0 /dev/sda3
   ```
@@ -48,13 +48,13 @@ A venerable Linux filesystem. Well supported (on non-UEFI x86/x86-64 systems one
 The old standby from MS-DOS days and still used (as FAT32/ESP) for UEFI that is also used by many ARM bootloaders, including the one on the Raspberry Pi.
 
 * Install package
-  
+
   ```shell
   apk add dosfstools
   ```
 
 * Create filesystem (sample session)
-  
+
   ```shell
   mkfs.vfat -F 32 /dev/sda1
   ```

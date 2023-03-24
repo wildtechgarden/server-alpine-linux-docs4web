@@ -61,7 +61,7 @@ The rest of this guide is now in sync regardless of whether you are starting wit
 
 ### Add a 'config' partition
 
-#### Options
+#### 'Config' partition options
 
 ##### Using f2fs
 
@@ -113,7 +113,7 @@ The rest of this guide is now in sync regardless of whether you are starting wit
 
 ### All other partitions
 
-#### Options
+#### Options for other partitions
 
 ##### For large non-flash storage use LVM and ext4 or on x86_64 always
 

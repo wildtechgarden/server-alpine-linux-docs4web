@@ -36,7 +36,7 @@ apk add apk-tools-doc \
      git-doc \
      haveged-doc \
      ifupdown-ng-doc \
-     iproute2-doc \ 
+     iproute2-doc \
      lvm2-doc \
      nano-doc \
      openssh-doc \
