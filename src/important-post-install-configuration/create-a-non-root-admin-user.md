@@ -3,7 +3,7 @@ date: 2022-04-28
 title: Create a non-root admin user
 tags: ["alpine","configuration","docs","hosting","linux","security","self-host","sysadmin-devops"]
 series: ["docs4web","alpine-linux-local-server"]
-description: "It is an administrative best practise to avoid logging in and/or operating with elevated privileges, to the extent reasonable to do so. Therefore one needs a user that is not root."
+description: "It is an administrative best practise to avoid operating with elevated privileges. Therefore one needs a user that is not root."
 summary: "It is an administrative best practise to avoid logging in and/or operating with elevated privileges, to the extent reasonable to do so. Therefore one needs a user that is not root for performing most operations."
 ---
 

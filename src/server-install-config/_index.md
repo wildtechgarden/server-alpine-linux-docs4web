@@ -40,4 +40,4 @@ Finally, the semi-data/semi-diskless guides would also work for systems in which
 
 ## Troubleshooting
 
-* [First boot troubleshooting](firstboot-troubleshooting.md)
+TBD

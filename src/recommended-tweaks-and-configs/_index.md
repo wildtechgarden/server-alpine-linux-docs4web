@@ -11,8 +11,6 @@ summary: "Configure backups on all systems, and create a more comfortable termin
 
 Assuming the reboot was successful, it is time to make your system more useful.
 
-Otherwise see [Firstboot troubleshooting](../server-install-config/firstboot-troubleshooting.md)
-
 ## Commit changes at your preferred granularity
 
 Don't forget that these changes will not survive reboot unless you commit your changes. I like to 'commit early, commit often', but you may wish to commit less frequently.

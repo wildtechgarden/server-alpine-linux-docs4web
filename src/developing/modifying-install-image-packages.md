@@ -5,7 +5,7 @@ tags: ["alpine","docs","linux","devel"]
 series: ["docs4web"]
 pageCanonical: false
 toCanonical: https://wiki.alpinelinux.org/wiki/Testing_modified_install_images_and_packages
-description: "Modifying packages that are part of the install diskless boot, or the parameters that can be accepted by the boot process, is more involved than modifying individual packages."
+description: "Modifying packages that are part of the install boot, or the parameters accepted by the boot process, is more involved than modifying individual packages."
 summary: "Modifying packages that are part of the install diskless boot (e.g. on install media), or the parameters that can be accepted by the boot process, is a little more involved than modifying individual packages, especially for netboot images."
 ---
 

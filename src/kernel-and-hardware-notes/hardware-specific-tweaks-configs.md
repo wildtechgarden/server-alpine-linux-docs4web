@@ -3,8 +3,8 @@ date: 2022-04-29
 title: Hardware-specific tweaks and configuration
 tags: ["alpine","docs","hardware","kernel","linux","sysadmin-devops","raspberry-pi","sbc"]
 series: ["docs4web","alpine-linux-local-server"]
-description: "Tweaks to Alpine Linux for specific hardware"
-summary: "Tweaks to Alpine Linux for specific hardware"
+description: "Tweaks to Alpine Linux for specific hardware including packages and kernel parameters"
+summary: "Tweaks to Alpine Linux for specific hardware including packages and kernel parameters"
 ---
 
 ## Systems with No RTC (real-time clock)
