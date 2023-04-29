@@ -1,9 +1,10 @@
 ---
 date: 2022-04-28
 title: "restic/rest-server install & configure"
-tags: ["alpine","configuration","linux","sysadmin-devops"]
+tags: ["alpine","linux","sysadmin-devops"]
 series: ["docs4web","alpine-linux-local-server"]
-draft: true
+description: "Using `rest-server` as repository for `restic`-based backups, on Alpine Linux"
+summary: "Using `rest-server` as repository for `restic`-based backups, on Alpine Linux"
 ---
 
 ``` shell
