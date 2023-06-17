@@ -49,4 +49,4 @@ You can also [browse or create an issue on GitLab](https://gitlab.com/danielfdic
 
 Copyright © 2022-2023 Daniel F. Dickinson
 
-Licensed under the Creative Commons Attribution Share-Alike 4.0 International license. See [LICENSE](https://github.com/danielfdickinson/server-alpine-linux-docs4web/blob/main/LICENSE) for details.
+Licensed under the Creative Commons Attribution Share-Alike 4.0 International license. See [LICENSE](https://gitlab.com/danielfdickinson/server-alpine-linux-docs4web/-/blob/main/LICENSEE) for details.

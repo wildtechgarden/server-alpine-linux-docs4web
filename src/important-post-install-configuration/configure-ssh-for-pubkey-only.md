@@ -21,7 +21,7 @@ In our examples we have been using the username `newadmin`.
     * [How Do I Generate SSH Keys? - Vultr.com](https://www.vultr.com/docs/how-do-i-generate-ssh-keys/)
     * [Connecting to GitHub with SSH - GitHub Docs](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)
     * [Scaleway's Guide for SSH key generation](https://www.scaleway.com/en/docs/console/my-project/how-to/create-ssh-key/)
-    * [Creating and connecting to your first Public Cloud instance | OVH Guides](https://docs.ovh.com/gb/en/public-cloud/public-cloud-first-steps/#step-1-creating-ssh-keys)
+    * [Creating and connecting to your first Public Cloud instance | OVH Guides](https://help.ovhcloud.com/csm/en-gb-public-cloud-compute-getting-started?id=kb_article_view&sysparm_article=KB0051017)
 
 2. On the server, logged in as `newadmin`
 3. `cd ~` (Make sure you are in the base of your home directory)
