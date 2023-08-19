@@ -3,8 +3,8 @@ date: 2022-04-29
 title: Alpine Linux as a server
 tags: ["alpine","linux","self-host","sysadmin-devops","raspberry-pi"]
 series: ["alpine-linux-local-server","docs4web"]
-summary: "Daniel's documentation for using [Alpine Linux](https://alpinelinux.org) for local servers on x86-64 and Raspberry Pi family."
-description: "Daniel's documentation for using Alpine Linux for local servers on x86-64 and Raspberry Pi family."
+summary: "Wild Tech Garden's documentation for using [Alpine Linux](https://alpinelinux.org) for local servers on x86-64 and Raspberry Pi family."
+description: "Wild Tech Garden's documentation for using Alpine Linux for local servers on x86-64 and Raspberry Pi family."
 cascade:
 - _target:
       kind: page
@@ -39,14 +39,14 @@ Daniel's documentation for using [Alpine Linux](https://alpinelinux.org) for loc
 
 ## Contributing
 
-You can 'git clone' [the source code for this documentation](https://gitlab.com/danielfdickinson/server-alpine-linux-docs4web) and submit a merge request if you wish to contribute changes.
+You can 'git clone' [the source code for this documentation](https://github.com/wildtechgarden/server-alpine-linux-docs4web) and submit a pull request if you wish to contribute changes.
 
-You can also [browse or create an issue on GitLab](https://gitlab.com/danielfdickinson/server-alpine-linux-docs4web/-/issues/new) if you've noticed an error or area to improve, or have a related request.
+You can also [browse or create an issue on GitHub](https://github.com/wildtechgarden/server-alpine-linux-docs4web/issues/new) if you've noticed an error or area to improve, or have a related request.
 
 --------
 
 ## Copyright and license
 
-Copyright © 2022-2023 Daniel F. Dickinson
+Copyright © 2022-2023 Wild Tech 'Garden'
 
-Licensed under the Creative Commons Attribution Share-Alike 4.0 International license. See [LICENSE](https://gitlab.com/danielfdickinson/server-alpine-linux-docs4web/-/blob/main/LICENSEE) for details.
+Licensed under the Creative Commons Attribution Share-Alike 4.0 International license. See [LICENSE](https://github.com/wildtechgarden/server-alpine-linux-docs4web/blob/main/LICENSE) for details.
