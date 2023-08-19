@@ -15,7 +15,7 @@ cascade:
   showChildPages: false
 ---
 
-Daniel's documentation for using [Alpine Linux](https://alpinelinux.org) for local servers on x86-64 and Raspberry Pi family. These documents use only the 'main' repository, except in one or more [optional HOWTO guides](howtos/_index.md). In addition, the documents try to keep things DRY (don't repeat yourself) in order to avoid out-of-sync information on the same topic.
+Wild Tech 'Garden's documentation for using [Alpine Linux](https://alpinelinux.org) for local servers on x86-64 and Raspberry Pi family. These documents use only the 'main' repository, except in one or more [optional HOWTO guides](howtos/_index.md). In addition, the documents try to keep things DRY (don't repeat yourself) in order to avoid out-of-sync information on the same topic. Original authored by [Daniel F. Dickinson](https://www.danielfdickinson.ca)
 
 ## Installation & configuration notes
 
