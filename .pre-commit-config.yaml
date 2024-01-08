@@ -62,7 +62,7 @@ repos:
   - id: csslint
 
 - repo: "https://github.com/pre-commit/mirrors-eslint"
-  rev: v8.52.0
+  rev: v9.0.0-alpha.0
   hooks:
   - id: eslint
     additional_dependencies:
@@ -84,20 +84,20 @@ repos:
     - --allow-empty-input
 
 - repo: "https://github.com/igorshubovych/markdownlint-cli"
-  rev: v0.37.0
+  rev: v0.38.0
   hooks:
   - id: markdownlint
     args: [--config, .markdownlint.json]
     files: .+\.(md|markdown)$
 
 - repo: "https://github.com/adrienverge/yamllint"
-  rev: v1.32.0
+  rev: v1.33.0
   hooks:
   - id: yamllint
     exclude: ^(_vendor)
 
 - repo: "https://github.com/zricethezav/gitleaks"
-  rev: v8.18.0
+  rev: v8.18.1
   hooks:
   - id: gitleaks
 
@@ -116,7 +116,7 @@ repos:
     exclude: ^(LICENSE|static/|assets/assets/files/|.vscode)
 
 - repo: "https://github.com/streetsidesoftware/cspell-cli"
-  rev: v7.3.2
+  rev: v8.3.0
   hooks:
   - id: cspell
     args:
